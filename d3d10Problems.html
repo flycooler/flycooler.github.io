@@ -1,0 +1,112 @@
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-4345202-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<p>1. How to use texture sampling in vertex shader in VS4.0?<br>
+From "Shader Stages (Direct3D 10)"
+<br>
+A vertex shader can perform load and texture sampling operations where
+screen-space derivatives are not required (using HLSL intrinsic
+functions samplelevel, samplecmplevelzero, samplegrad).
+</p>
+<br>
+
+<p>2.Is there any way I can transfer data (a texture for instance, preferably a big one) <br>
+from the video memory to the main memory in an asynchronous manner?<br>
+
+In D3D10:
+Create a USAGE_STAGING texture with the CPU_ACCESS_READ flag. This will allocate memory optimized for CPU <br>
+reads -- likely in cached system RAM. Call CopyResource() or CopySubresourceRegion() to copy from whatever <br>
+the source resource is (e.g. your rendertarget) into the staging resource.<br>
+(optional) Call Flush() to make sure the copy command gets sent to the GPU immediately.<br>
+(optional) Call Map() on the staging resource with MAP_READ and the DO_NOT_WAIT flag. This will return<br> 
+E_WASSTILLRENDERING if the copy hasn't finished yet. You can then go do something else for a while and<br> 
+try again later. Once you've got nothing else to do, wait for the copy to finish by calling Map() without<br>
+the DO_NOT_WAIT flag.<br>
+
+In OpengGL:<br>
+Thanks, here is the corresponding example code found in:<br>
+http://www.opengl.org/registry/specs/ARB/pixel_buffer_object.txt<br>
+
+Any clue about the other API/platform?<br>
+
+const int imagewidth = 640;<br>
+const int imageheight = 480;<br>
+const int imageSize = imagewidth*imageheight*4;<br>
+
+glGenBuffers(2, imageBuffers);<br>
+
+glBindBuffer(GL_PIXEL_PACK_BUFFER_ARB, imageBuffers[0]);<br>
+glBufferData(GL_PIXEL_PACK_BUFFER_ARB, imageSize / 2, NULL,
+GL_STREAM_READ);<br>
+
+glBindBuffer(GL_PIXEL_PACK_BUFFER_ARB, imageBuffers[1]);<br>
+glBufferData(GL_PIXEL_PACK_BUFFER_ARB, imageSize / 2, NULL,
+GL_STREAM_READ);<br>
+
+// Render to framebuffer<br>
+glDrawBuffer(GL_BACK);<br>
+renderScene();<br>
+
+// Bind two different buffer objects and start the glReadPixels<br>
+// asynchronously. Each call will return directly after<br>
+// starting the DMA transfer.<br>
+glBindBuffer(GL_PIXEL_PACK_BUFFER_ARB, imageBuffers[0]);<br>
+glReadPixels(0, 0, imagewidth, imageheight/2, GL_BGRA,
+GL_UNSIGNED_BYTE, BUFFER_OFFSET(0));<br>
+
+glBindBuffer(GL_PIXEL_PACK_BUFFER_ARB, imageBuffers[1]);<br>
+glReadPixels(0, imageheight/2, imagewidth, imageheight/2, GL_BGRA,
+GL_UNSIGNED_BYTE, BUFFER_OFFSET(0));<br>
+
+// Process partial images. Mapping the buffer waits for<br>
+// outstanding DMA transfers into the buffer to finish.<br>
+glBindBuffer(GL_PIXEL_PACK_BUFFER_ARB, imageBuffers[0]);<br>
+pboMemory1 = glMapBuffer(GL_PIXEL_PACK_BUFFER_ARB,
+GL_READ_ONLY);<br>
+processImage(pboMemory1);<br>
+glBindBuffer(GL_PIXEL_PACK_BUFFER_ARB, imageBuffers[1]);<br>
+pboMemory2 = glMapBuffer(GL_PIXEL_PACK_BUFFER_ARB,
+GL_READ_ONLY);<br>
+processImage(pboMemory2);<br>
+
+// Unmap the image buffers<br>
+glBindBuffer(GL_PIXEL_PACK_BUFFER_ARB, imageBuffers[0]);<br>
+glUnmapBuffer(GL_PIXEL_PACK_BUFFER_ARB);<br>
+glBindBuffer(GL_PIXEL_PACK_BUFFER_ARB, imageBuffers[1]);<br>
+glUnmapBuffer(GL_PIXEL_PACK_BUFFER_ARB);<br>
+
+<p>3. How to handle the "ERROR X4014: cannot have divergent gradient operations inside loops." <br>
+you can not use functions like Texture.Sample in a block with dynamic<br>
+flow control, because its result depends on the invocation of the same<br>
+function in neighbor pixels. Using dynamic flow control its not<br>
+guaranteed that the function is called in the neighbor pixel and thus<br>
+the result would be undefined. To make it running, make numSamples a<br>
+constant value and unroll the loop (using [unroll] semantics before<br>
+'for' keyword). (Or use different sample function where the onscreen<br>
+gradient computation is not needed, like Load or SampleGrad, but<br>
+that's probably not an option in your case.)<br><br>
+
+Trick: Try to use SampleLevel() to replace Sample(), if no neighbour<br>
+sampling(ddx,ddy) needed!<br>
+</p>
+
+<p>4. How to render direct lighting + indirect lighting in 2 passes with <br>
+alpha blending way?<br>
+The trick here is 2 passes will share the same depth-stencil surface.<br>
+In pass1, no blending status.<br>
+In pass2, set additive blending status, but *** set the depth comparison<br>
+func to be EQUAL!<br>
+</p>
+
+
+
+

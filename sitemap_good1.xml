@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- sitemap-generator-url="http://www.auditmypc.com/free-sitemap-generator.asp" -->
+<!-- This sitemap was created using the free tool found here: http://www.auditmypc.com/free-sitemap-generator.asp -->
+<!-- Audit My PC also offers free security tools to help keep you safe during internet travels -->
+<urlset 
+		xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 
+		http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+>
+<url>
+    <loc>http://www.graphics.cornell.edu/~zd/</loc>
+</url>
+<url>
+    <loc>http://www.graphics.cornell.edu/~zd/Images/ZhaoDong_2008.jpg</loc>
+    <lastmod>2009-12-14T19:02:03-05:00</lastmod>
+</url>
+<url>
+    <loc>http://www.graphics.cornell.edu/~zd/Images/zdongContact.png</loc>
+    <lastmod>2011-03-30T15:11:15-04:00</lastmod>
+</url>
+<url>
+    <loc>http://www.graphics.cornell.edu/~zd/Images/PG2010_Reps.png</loc>
+    <lastmod>2010-08-02T10:31:25-04:00</lastmod>
+</url>
+<url>
+    <loc>http://www.graphics.cornell.edu/~zd/download/PG2010Final/PG2010_Sub.pdf</loc>
+    <lastmod>2010-08-02T03:40:24-04:00</lastmod>
+</url>
+<url>
+    <loc>http://www.graphics.cornell.edu/~zd/download/PG2010_bibtex.html</loc>
+</url>
+<url>
+    <loc>http://www.graphics.cornell.edu/~zd/download/PG2010Final/PG2010_xvid.avi</loc>
+    <lastmod>2010-07-15T06:41:58-04:00</lastmod>
+</url>
+<url>
+    <loc>http://www.graphics.cornell.edu/~zd/download/PG2010Final/VSSM_Talk_PG2010.zip</loc>
+    <lastmod>2010-11-14T19:12:19-05:00</lastmod>
+</url>
+<url>
+    <loc>http://www.graphics.cornell.edu/~zd/PG2010_VSSM.html</loc>
+</url>
+<url>
+    <loc>http://www.graphics.cornell.edu/~zd/Images/Informatik_I3D2010.png</loc>
+    <lastmod>2010-06-09T11:25:39-04:00</lastmod>
+</url>
+<url>
+    <loc>http://www.graphics.cornell.edu/~zd/Images/I3D10_Poster.png</loc>
+    <lastmod>2010-01-11T10:29:50-05:00</lastmod>
+</url>
+<url>
+    <loc>http://www.graphics.cornell.edu/~zd/download/I3D2010Poster_bibtex.html</loc>
+</url>
+<url>
+    <loc>http://www.graphics.cornell.edu/~zd/download/I3DPoster/I3D2010Poster_Xvid.avi</loc>
+    <lastmod>2009-12-18T17:33:37-05:00</lastmod>
+</url>
+<url>
+    <loc>http://www.graphics.cornell.edu/~zd/Images/Tech09_RepS.png</loc>
+    <lastmod>2009-09-09T21:04:15-04:00</lastmod>
+</url>
+<url>
+    <loc>http://www.graphics.cornell.edu/~zd/download/I3DFinal/I3D2010_Sub.pdf</loc>
+    <lastmod>2009-12-16T08:39:08-05:00</lastmod>
+</url>
+<url>
+    <loc>http://www.graphics.cornell.edu/~zd/download/I3D2010_bibtex.html</loc>
+</url>
+<url>
+    <loc>http://www.graphics.cornell.edu/~zd/download/I3D2010_xvid.avi</loc>
+    <lastmod>2009-12-10T15:05:00-05:00</lastmod>
+</url>
+<url>
+    <loc>http://www.graphics.cornell.edu/~zd/download/I3DFinal/ID3D10_VolCausticsPPTs.zip</loc>
+    <lastmod>2010-03-03T07:22:56-05:00</lastmod>
+</url>
+<url>
+    <loc>http://www.graphics.cornell.edu/~zd/I3D2010_VolCaustics.html</loc>
+</url>
+<url>
+    <loc>http://www.graphics.cornell.edu/~zd/Images/VMV09_RepS.png</loc>
+    <lastmod>2009-08-26T10:33:55-04:00</lastmod>
+</url>
+<url>
+    <loc>http://www.graphics.cornell.edu/~zd/download/VMV09_paper.pdf</loc>
+    <lastmod>2009-08-26T10:04:01-04:00</lastmod>
+</url>
+<url>
+    <loc>http://www.graphics.cornell.edu/~zd/download/VMV09_bibtex.html</loc>
+</url>
+<url>
+    <loc>http://www.graphics.cornell.edu/~zd/download/VMV09_ClusteredVisibility.avi</loc>
+    <lastmod>2009-08-26T09:59:37-04:00</lastmod>
+</url>
+<url>
+    <loc>http://www.graphics.cornell.edu/~zd/download/VMV09Talk.zip</loc>
+    <lastmod>2009-11-27T06:56:48-05:00</lastmod>
+</url>
+<url>
+    <loc>http://www.graphics.cornell.edu/~zd/Images/FirstSIG_Zhao.png</loc>
+    <lastmod>2008-04-24T07:32:06-04:00</lastmod>
+</url>
+<url>
+    <loc>http://www.graphics.cornell.edu/~zd/download/SIG08_CSSM.pdf</loc>
+    <lastmod>2008-05-02T06:57:33-04:00</lastmod>
+</url>
+<url>
+    <loc>http://www.graphics.cornell.edu/~zd/download/SIG08_bibtex.html</loc>
+</url>
+<url>
+    <loc>http://www.graphics.cornell.edu/~zd/download/SIG08_CSSM.avi</loc>
+    <lastmod>2008-05-02T06:32:54-04:00</lastmod>
+</url>
+<url>
+    <loc>http://www.graphics.cornell.edu/~zd/download/allfreq_sig08.zip</loc>
+    <lastmod>2008-08-22T01:02:11-04:00</lastmod>
+</url>
+<url>
+    <loc>http://www.graphics.cornell.edu/~zd/SIG08_CSSM.html</loc>
+</url>
+<url>
+    <loc>http://www.graphics.cornell.edu/~zd/Images/caustics.JPG</loc>
+    <lastmod>2008-04-01T19:03:23-04:00</lastmod>
+</url>
+<url>
+    <loc>http://www.graphics.cornell.edu/~zd/download/VC08_bibtex.html</loc>
+</url>
+<url>
+    <loc>http://www.graphics.cornell.edu/~zd/Images/cda_displayimage.jpg</loc>
+    <lastmod>2007-11-18T13:36:23-05:00</lastmod>
+</url>
+<url>
+    <loc>http://www.graphics.cornell.edu/~zd/Images/PG07_small.png</loc>
+    <lastmod>2007-11-18T14:37:51-05:00</lastmod>
+</url>
+<url>
+    <loc>http://www.graphics.cornell.edu/~zd/download/PG07_ImplicitVis.pdf</loc>
+    <lastmod>2007-07-26T18:02:04-04:00</lastmod>
+</url>
+<url>
+    <loc>http://www.graphics.cornell.edu/~zd/download/PG07_bibtex.html</loc>
+</url>
+<url>
+    <loc>http://www.graphics.cornell.edu/~zd/download/PG07Divx.avi</loc>
+    <lastmod>2007-05-12T22:51:38-04:00</lastmod>
+</url>
+<url>
+    <loc>http://www.graphics.cornell.edu/~zd/download/PG07_ImplicitVis.pps</loc>
+    <lastmod>2007-11-12T08:39:28-05:00</lastmod>
+</url>
+<url>
+    <loc>http://www.graphics.cornell.edu/~zd/Images/IEEEMM_small.png</loc>
+    <lastmod>2007-11-18T14:50:28-05:00</lastmod>
+</url>
+<url>
+    <loc>http://www.graphics.cornell.edu/~zd/download/FacialDemo.mov</loc>
+    <lastmod>2007-07-06T11:23:03-04:00</lastmod>
+</url>
+<url>
+    <loc>http://www.graphics.cornell.edu/~zd/download/IEEEMM07_bibtex.html</loc>
+</url>
+<url>
+    <loc>http://www.graphics.cornell.edu/~zd/Images/PG04_small.jpg</loc>
+    <lastmod>2007-11-18T15:12:08-05:00</lastmod>
+</url>
+<url>
+    <loc>http://www.graphics.cornell.edu/~zd/download/PG04.pdf</loc>
+    <lastmod>2005-09-05T11:26:14-04:00</lastmod>
+</url>
+<url>
+    <loc>http://www.graphics.cornell.edu/~zd/download/PG04.pps</loc>
+    <lastmod>2005-09-05T11:26:29-04:00</lastmod>
+</url>
+<url>
+    <loc>http://www.graphics.cornell.edu/~zd/download/PG04_bibtex.html</loc>
+</url>
+<url>
+    <loc>http://www.graphics.cornell.edu/~zd/Images/PointRendering_small.png</loc>
+    <lastmod>2007-11-18T15:23:51-05:00</lastmod>
+</url>
+<url>
+    <loc>http://www.graphics.cornell.edu/~zd/download/PG2010Final/PG2010_TeaserWeb.png</loc>
+    <lastmod>2010-08-02T03:28:29-04:00</lastmod>
+</url>
+<url>
+    <loc>http://www.graphics.cornell.edu/~zd/download/I3DFinal/TeaserWeb_I3D2010.png</loc>
+    <lastmod>2009-12-15T15:20:51-05:00</lastmod>
+</url>
+</urlset>

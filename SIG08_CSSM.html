@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!-- TemplateBeginEditable name="doctitle" -->
+<title>Project page: Real-time, All-frequency Shadows in Dynamic Scenes</title><!-- TemplateEndEditable -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-4345202-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<link rel="SHORTCUT ICON" href="http://www.mpii.mpg.de/favicon.ico">
+<link rel="stylesheet" type="text/css" media="screen" href="http://www.mpii.mpg.de/c/mpi-inf.css">
+<link rel="stylesheet" type="text/css" media="print" href="http://www.mpii.mpg.de/c/print.css"><!-- TemplateBeginEditable name="head" -->
+
+<style type="text/css" media="screen">
+a#n4-departments, a:link#n1-departments, a:visited#n1-departments {color: #fff;}
+a#n2-departments, a:link#n2-departments, a:visited#n2-departments {background: rgb(80%,85%,90%);}
+a#d4-homepage, a:link#d4-homepage, a:visited#d4-homepage {background: rgb(80%,85%,90%);}
+a#d4-people, a:link#d4-people, a:visited#d4-people {background: rgb(80%,85%,90%);}
+li.hps {margin-top:10px;}
+
+</style><!-- TemplateEndEditable --><script charset="utf-8" id="injection_graph_func" src="Real-time,%20All-frequency%20Shadows%20in%20Dynamic%20Scenes_files/injection_graph_func.js"></script>
+<script type="text/javascript">
+function MM_CheckFlashVersion(reqVerStr,msg){
+  with(navigator){
+    var isIE  = (appVersion.indexOf("MSIE") != -1 && userAgent.indexOf("Opera") == -1);
+    var isWin = (appVersion.toLowerCase().indexOf("win") != -1);
+    if (!isIE || !isWin){  
+      var flashVer = -1;
+      if (plugins && plugins.length > 0){
+        var desc = plugins["Shockwave Flash"] ? plugins["Shockwave Flash"].description : "";
+        desc = plugins["Shockwave Flash 2.0"] ? plugins["Shockwave Flash 2.0"].description : desc;
+        if (desc == "") flashVer = -1;
+        else{
+          var descArr = desc.split(" ");
+          var tempArrMajor = descArr[2].split(".");
+          var verMajor = tempArrMajor[0];
+          var tempArrMinor = (descArr[3] != "") ? descArr[3].split("r") : descArr[4].split("r");
+          var verMinor = (tempArrMinor[1] > 0) ? tempArrMinor[1] : 0;
+          flashVer =  parseFloat(verMajor + "." + verMinor);
+        }
+      }
+      // WebTV has Flash Player 4 or lower -- too low for video
+      else if (userAgent.toLowerCase().indexOf("webtv") != -1) flashVer = 4.0;
+
+      var verArr = reqVerStr.split(",");
+      var reqVer = parseFloat(verArr[0] + "." + verArr[2]);
+  
+      if (flashVer < reqVer){
+        if (confirm(msg))
+          window.location = "http://www.macromedia.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash";
+      }
+    }
+  } 
+}
+  </script></head>
+
+ <body onload="MM_CheckFlashVersion('7,0,0,0','This page requires Macromedia Flash Player Version, Download it now£¿');">
+
+<div id="headerspacer"></div>
+
+<div id="col2o2">
+  <div id="col2o2content">
+
+<center><h1><b>Real-time, All-frequency Shadows in Dynamic Scenes</b></h1>
+<h3>Thomas Annen<sup>1</sup>, Zhao Dong<sup>1*</sup>, Tom Mertens<sup>2</sup>, Philippe Bekaert<sup>2</sup>, Hans-Peter Seidel<sup>1</sup>, Jan Kautz<sup>3</sup></h3>
+<h3><sup>1</sup>MPI Informatik, Germany &nbsp; <sup>2</sup>Hasselt University, tUL-IBBT, EDM, Belgium &nbsp; <sup>3</sup>University College London, UK</h3>
+<h3><sup>*</sup><I>The first two authors are sorted by the alphabetic order of their last names.</I></h3>
+</center>
+
+<p style="text-align: center;">
+<img style="float: none;" src="download/teaser_web.png" width="67%"/></p>
+<h3><p align="center">Figure 1: A fully dynamic animation of a dancing robot under environment map lighting rendered at 29.4 fps without any precomputation.<br>
+Incident radiance is approximated by 30 area light sources (256x256 shadow map resolution each).</p></h3>
+<br>
+
+
+<h1><a name="introduction"><strong>Introduction</strong></a></h1>
+<p>Real-time, photo-realistic rendering of computer-generated scenes
+requires a high computational effort. One of the main bottlenecks
+is visibility determination between light sources and receiving surfaces,
+especially under complex lighting such as area light sources
+or environment maps.
+</p>
+    
+<p>The goal of our work is to enable real-time, all-frequency shadows
+in completely dynamic scenes and to support area light sources as
+well as environment lighting. The key contribution is a very fast
+method for rendering plausible soft shadows. It requires only a
+constant-time memory lookup, thereby enabling us to render soft
+shadows at hundreds of frames per second for a single area source.
+Environment-lit scenes can be rendered from a collection of approximating
+area light sources. Even though shadows are only approximate,
+the results are virtually indistinguishable from reference
+renderings, but are produced at real-time frame rates.
+</p>
+
+<h1><a name="abstract"><strong>Paper Abstract</strong></a></h1>
+<p>Shadow computation in dynamic scenes under complex illumination
+is a challenging problem. Methods based on precomputation
+provide accurate, real-time solutions, but are hard to extend to dynamic
+scenes. Specialized approaches for soft shadows can deal
+with dynamic objects but are not fast enough to handle more than
+one light source. In this paper, we present a technique for rendering
+dynamic objects under arbitrary environment illumination, which
+does not require any precomputation. The key ingredient is a fast,
+approximate technique for computing soft shadows, which achieves
+several hundred frames per second for a single light source. This
+allows for approximating environment illumination with a sparse
+collection of area light sources and yields real-time frame rates.
+</p>
+
+<h1><a name="material"><strong>Materials for Download</strong></a></h1>
+<br>
+<ul>
+<li><a href="http://www.graphics.cornell.edu/~zd/download/SIG08_CSSM.pdf" target="_blank">Paper (8MB)</a>, to appear in <a href="http://www.siggraph.org/s2008">SIGGRAPH 2008</a>.</li>
+<li><a href="http://www.graphics.cornell.edu/~zd/download/SIG08_CSSM.avi" target="_blank">Final video (DivX Codec, 23MB)</a>.</li>
+<li>You can <a href = "http://www.youtube.com/watch?v=aF2NmDzU4YM" target="_blank">check out the video from Youtube.</a></li>
+<li> 
+<object width="640" height="505"><param name="movie" value="http://www.youtube.com/v/aF2NmDzU4YM&hl=en_US&fs=1&hd=1"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/aF2NmDzU4YM&hl=en_US&fs=1&hd=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="640" height="505"></embed></object>
+</li>
+</ul>
+<br>
+
+<h1><a name="Bibtex"><strong>Bibtex</strong></a></h1>
+<p>
+@Article{ADM08:2008:CSSM,<br>
+author = {Annen, Thomas and Dong, Zhao and Mertens, Tom and Bekaert, Philippe and Seidel, Hans-Peter and Kautz, Jan},<br>
+title = {Real-time, all-frequency shadows in dynamic scenes},<br>
+journal = {ACM Trans. Graph.},<br>
+volume = {27},<br>
+number = {3},<br>
+year = {2008},<br>
+pages = {1--8},<br>
+publisher = {ACM},<br>
+} 
+</p>
+<h1><a name="Acknowledge"><strong>Acknowledgements</strong></a></h1>
+<p align="left">
+We thank <a href="http://cg.cs.tsinghua.edu.cn/people/~kun/" target="_blank">Kun Xu</a> and the <a href = "http://cg.cs.tsinghua.edu.cn/">Graphics and Geometric Computing
+Group at Tsinghua University</a> for providing the robot 3D animation
+sequence, <a href="http://www9.informatik.uni-erlangen.de/people/card/michael/schwarz/" target ="_blank">Michael Schwarz</a> for the bitmask- and backprojection
+soft shadow demo, and <a href="http://graphics.uni-konstanz.de/mitarbeiter/luft.php?language=english">Thomas Luft</a> for providing the leaf
+model from Figure 12. Thanks to Paul Debevec for his light probes
+(http://www.debevec.org) and to the Stanford University Computer
+Graphics Laboratory for the happy Buddha model. The model from
+Figure 8 was Generated by 'Sculpture Generator 1' by <a href="http://www.eecs.berkeley.edu/~sequin/" target ="_blank">Carlo H. S&eacute;quin, UC Berkeley</a>. 
+Part of the research at EDM is funded by
+the European Regional Development Fund and the Flemish government,
+and part of the research at UCL is funded by EPSRC (grant
+EP/E047343/1).
+</p>
+
+
+<!--- ********************************************************************* -->    
+<div>
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+sc_project=3669598; 
+sc_invisible=0; 
+sc_partition=44; 
+sc_security="ecc764bb"; 
+</script>
+
+<script type="text/javascript" src="http://www.statcounter.com/counter/counter_xhtml.js"></script><noscript><div class="statcounter"><a href="http://www.statcounter.com/" target="_blank"><img class="statcounter" src="http://c45.statcounter.com/3669598/0/ecc764bb/0/" alt="hit tracker" ></a></div></noscript>
+<!-- End of StatCounter Code -->
+</div>
+   </div>
+</div>
+
+<div id="col1o2">
+     <div id="col1o2content"> <!-- InstanceBeginEditable name="col1o2" -->
+    <!-- CORRECT HERE: see the file menu.inc for all menu items -->
+<!-- the highlighting of selected menu items is done using the style-tag. See the top of this file -->
+    <ul class="linklist">
+<li><a href="http://www.graphics.cornell.edu/~zd" title="Real-time GI" id="hp-index">Zhao Dong's Real-time GI Projects:</a></li>
+<li><a href="http://www.graphics.cornell.edu/~zd/SIG08_CSSM.html" title="Real-time, All-frequency Shadows"><span class="ak">&nbsp;R</span>eal-time, All-Frequency Shadows</a></li>
+<li><a href="http://www.graphics.cornell.edu/~zd/SIG08_CSSM.html#introduction"><span class="ak">&nbsp;- I</span>ntroduction</a></li>
+<li><a href="http://www.graphics.cornell.edu/~zd/SIG08_CSSM.html#abstract"><span class="ak">&nbsp;- P</span>aper Abstract</a></li>
+<li><a href="http://www.graphics.cornell.edu/~zd/SIG08_CSSM.html#material"><span class="ak">&nbsp;- M</span>aterials</a></li>
+<li><a href="http://www.graphics.cornell.edu/~zd/SIG08_CSSM.html#Acknowledge"><span class="ak">&nbsp;- A</span>cknowledgements</a></li>
+
+<!-- Make sure to highlight the page you are on using the style section on top of that page -->
+
+</ul>
+</div>
+</div>
+
+</body></html>
