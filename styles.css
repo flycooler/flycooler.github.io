@@ -227,3 +227,105 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 12px;
+        padding: 10px;
+    }
+    
+    /* Profile section - stack vertically on mobile */
+    .profile-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .profile-photo {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    
+    .profile-photo img {
+        width: 200px;
+        max-width: 90%;
+    }
+    
+    /* Contact info and logos */
+    .contact-info img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .logos {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .logos img {
+        height: 80px;
+        margin: 5px;
+    }
+    
+    /* Navigation - stack vertically */
+    .nav-table {
+        width: 100%;
+    }
+    
+    .nav-cell {
+        display: block;
+        width: 100%;
+        padding: 8px 0;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    /* Publications - stack vertically */
+    .publication-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 25px;
+        padding: 0.5em;
+    }
+    
+    .publication-item img {
+        width: 150px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    
+    .publication-details {
+        text-align: left;
+    }
+    
+    /* Section titles */
+    .section-title {
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    
+    /* Lists */
+    .research-list,
+    .activities-list,
+    .education-list,
+    .professional-list {
+        margin: 0;
+        padding: 0 1em;
+    }
+    
+    /* Bio paragraphs */
+    .bio-paragraph {
+        padding: 0.25em 0.5em;
+        font-size: 12px;
+        text-align: justify;
+    }
+    
+    /* Header */
+    .header-title h2 {
+        font-size: 18px;
+        text-align: center;
+        margin: 10px 0;
+    }
+}
