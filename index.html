@@ -1,1436 +1,385 @@
-<!DOCTYPE html
-  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Welcome to Zhao Dong's (董朝) Homepage.</title>
-  <meta content="Zhao Dong">
   <meta name="author" content="Zhao Dong">
   <meta name="description" content="Zhao Dong's personal webpage.">
-  <meta name="keywords" content="Zhao Dong, Physically-based Rendering, SVBRDF Acquisition, BRDF Modelling, Complex Lighting, Scattering,
-Global Illumination.">
+  <meta name="keywords" content="Zhao Dong, Physically-based Rendering, SVBRDF Acquisition, BRDF Modelling, Complex Lighting, Scattering, Global Illumination.">
   <link rel="icon" href="Images/ZhaoDong_2008.ico">
-  <link rel="SHORTCUT ICON" href="Images/ZhaoDong_2008.ico">
-  <!-- For apple devices -->
-  <link rel="apple-touch-icon" href="Images/ZhaoDong_2008.ico" />
-  <script type="text/javascript">
+  <link rel="shortcut icon" href="Images/ZhaoDong_2008.ico">
+  <link rel="apple-touch-icon" href="Images/ZhaoDong_2008.ico">
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Google Analytics -->
+  <script>
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-4345202-2']);
     _gaq.push(['_trackPageview']);
 
     (function () {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      var ga = document.createElement('script'); 
+      ga.type = 'text/javascript'; 
+      ga.async = true;
       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      var s = document.getElementsByTagName('script')[0]; 
+      s.parentNode.insertBefore(ga, s);
     })();
   </script>
 </head>
 
-<body id="body">
-  <table id="sites-chrome-header" cellspacing="0">
-    <tr>
-      <td id="sites-header-title">
-        <h2>
-          <a href="http://www.flycooler.com" style="color:rgb(0, 51, 102)" dir="ltr">Welcome to Zhao Dong's (董朝)
-            homepage</a>
-        </h2>
-      </td>
-    </tr>
-    <tr class="sites-header-secondary-row">
-      <td colspan="2">
-      </td>
-    </tr>
-  </table>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-title">
+      <h2>
+        <a href="http://www.flycooler.com">Welcome to Zhao Dong's (董朝) homepage</a>
+      </h2>
+    </div>
+  </header>
 
-  <table align="left" border=0 cellpadding=0 cellspacing=1>
-    <tr align="center" valign="bottom">
-      <td>
-        <img border="0" width="268" src="Images/Zhao_Photo_crop1_2020.jpg" />
-      </td>
-      <td>
-        <table>
-          <tr>
-            <td colspan="3"><img border="0" height="160" src="Images/zdongContact_updated.png" /></td>
-          </tr>
-          <tr>
-            <td><img border="0" height="120" src="Images/Cornell_Logo.jpg" /></td>
-            <td><img border="0" height="120" src="Images/MPII_Logo.jpg" /></td>
-            <td><img border="0" height="120" src="Images/ZJU_Logo.jpg" /></td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-  </table>
+  <!-- Profile Section -->
+  <section class="profile-section">
+    <div class="profile-photo">
+      <img src="Images/Zhao_Photo_crop1_2020.jpg" alt="Zhao Dong" width="268">
+    </div>
+    <div class="contact-info">
+      <div>
+        <img src="Images/zdongContact_updated.png" alt="Contact Information" height="160">
+      </div>
+      <div class="logos">
+        <img src="Images/Cornell_Logo.jpg" alt="Cornell University" height="120">
+        <img src="Images/MPII_Logo.jpg" alt="Max Planck Institute" height="120">
+        <img src="Images/ZJU_Logo.jpg" alt="Zhejiang University" height="120">
+      </div>
+    </div>
+  </section>
 
-  <br>
+  <!-- Bio Section -->
+  <section class="bio-section">
+    <div class="divider">
+      <hr>
+    </div>
+        
+    <div class="bio-paragraph">
+      I am currently a Senior Research Lead & Manager at <a href="https://research.fb.com/category/augmented-reality-virtual-reality/" target="_blank">Meta Reality Labs Research</a> building the next-gen human-centric agent computing platform. Previously, I served as the Graphics Research Lead at the Technology Development Group of <a href="https://www.apple.com" target="_blank">Apple</a>, a Principal R&D Engineer with <a href="https://www.autodesk.com/products/rendering/overview" target="_blank">Autodesk's Cloud Rendering Service team</a>, and a Postdoctoral Researcher at the <a href="http://www.graphics.cornell.edu/" target="_blank">Program of Computer Graphics</a> of <a href="http://www.cornell.edu/" target="_blank">Cornell University</a>.
+    </div>
+    
+    <div class="bio-paragraph">
+      In 1997, I was enrolled in <a href="http://www.zju.edu.cn/" target="_blank">Zhejiang University</a>. After earning my bachelor's degrees, I started my research journey by pursuing my M.S. degree at the <a href="http://www.cad.zju.edu.cn" target="_blank">State Key Lab of CAD&CG of Zhejiang University</a>. During this time, I had the privilege of working under the guidance of <a href="http://www.cad.zju.edu.cn/home/peng/" target="_blank">Prof. Qunsheng Peng</a> and <a href="http://www.cad.zju.edu.cn/home/chenwei/" target="_blank">Prof. Wei Chen</a>, exploring fascinating problems in graphics research. In September 2005, I embarked on my Ph.D. journey at the <a href="http://www.mpi-inf.mpg.de/departments/d4/index.html" target="_blank">Computer Graphics Group</a> of the <a href="http://www.mpi-inf.mpg.de/" target="_blank">Max-Planck-Institut für Informatik</a> in Saarbrücken, Germany, under the supervision of <a href="http://www.mpi-inf.mpg.de/~hpseidel/" target="_blank">Prof. Dr. Hans-Peter Seidel</a>. My Ph.D. research focused on GPU-based real-time rendering, where I had the opportunity to collaborate closely with <a href="https://jankautz.com/" target="_blank">Prof. Jan Kautz</a>. Throughout my academic journey, I also visited the <a href="http://research.microsoft.com/en-us/groups/ig/" target="_blank">Internet Graphics Group</a> at <a href="http://research.microsoft.com/en-us/labs/asia/default.aspx" target="_blank">MSRA</a>, working with <a href="http://www.cad.zju.edu.cn/home/xgliu/" target="_blank">Prof. Xinguo Liu</a> and <a href="http://research.microsoft.com/en-us/groups/graphics/" target="_blank">Computer Graphics Group</a> at <a href="http://research.microsoft.com/en-us/labs/redmond/default.aspx" target="_blank">MSR</a>, under the mentorship of <a href="http://research.microsoft.com/en-us/um/people/johnsny/" target="_blank">Dr. John Snyder</a>. These experiences, alongside the invaluable mentorship of my advisors, have profoundly shaped my research and career. I am deeply grateful for the knowledge and inspiration I have gained from them.
+    </div>
+  </section>
 
-  <div>
-    <table align="left" border=0 cellpadding=0 cellspacing=1>
+  
+
+  <!-- Navigation -->
+  <nav class="navigation">
+    <table class="nav-table">
       <tr>
-        <td>
-          <div>
-            <font color="#3D85C6" size="4">
-              <hr />
-            </font>
-          </div>
-          <div style="position:relative; overflow: hidden;text-align:left;display:block">
-            <div>
-              <p
-                style="line-height:1.5;padding-top:0.25em;padding-right:1em;padding-bottom:0.25em;padding-left:1em;font-size:14px;color:rgb(0, 51, 102);font-family:Helvetica, Verdana, Arial, sans-serif">
-                I am currently a Senior Research Lead & Manager at <a
-                href="https://research.fb.com/category/augmented-reality-virtual-reality/"
-                style="color:rgb(0, 51, 102)" target="_blank">Meta Reality Labs Research</a> building the next-gen human-centric agent computing platform. Previously, I served as the Graphics Research Lead at the
-                Technology Development Group of <a href="https://www.apple.com" style="color:rgb(0, 51, 102)"
-                  target="_blank">Apple</a>, a Principal R&D Engineer with <a
-                  href="https://www.autodesk.com/products/rendering/overview" style="color:rgb(0, 51, 102)"
-                  target="_blank">Autodesk's Cloud Rendering Service team</a>, and a Postdoctoral Researcher at the <a
-                  href="http://www.graphics.cornell.edu/" style="color:rgb(0, 51, 102)" target="_blank">Program of
-                  Computer Graphics</a> of <a href="http://www.cornell.edu/" style="color:rgb(0, 51, 102)"
-                  target="_blank">Cornell University</a>. </p>
-            </div>
-            <div>
-              <p
-                style="line-height:1.5;padding-top:0.25em;padding-right:1em;padding-bottom:0.25em;padding-left:1em;font-size:14px;color:rgb(0, 51, 102);font-family:Helvetica, Verdana, Arial, sans-serif">
-                In 1997, I was enrolled in <a href="http://www.zju.edu.cn/" style="color:rgb(0, 51, 102)"
-                  target="_blank">Zhejiang University</a>. After earning my bachelor’s degrees, I started my research journey by
-                  pursuing my M.S. degree at the <a href="http://www.cad.zju.edu.cn"
-                  style="color:rgb(0, 51, 102)" target="_blank">State Key Lab of CAD&amp;CG of Zhejiang University</a>.
-                  During this time, I had the privilege of working under the guidance of <a href="http://www.cad.zju.edu.cn/home/peng/" style="color:rgb(0, 51, 102)"
-                  target="_blank">Prof. Qunsheng Peng</a> and <a href="http://www.cad.zju.edu.cn/home/chenwei/"
-                  style="color:rgb(0, 51, 102)" target="_blank">Prof. Wei Chen</a>, exploring fascinating problems in graphics research. In September 2005, I embarked on my Ph.D. journey at the <a href="http://www.mpi-inf.mpg.de/departments/d4/index.html"
-                  style="color:rgb(0, 51, 102)" target="_blank">Computer Graphics Group</a> of the <a
-                  href="http://www.mpi-inf.mpg.de/" style="color:rgb(0, 51, 102)" target="_blank">Max-Planck-Institut
-                  f&uumlr Informatik</a> in Saarbr&uumlcken, Germany, under the supervision of <a
-                  href="http://www.mpi-inf.mpg.de/~hpseidel/" style="color:rgb(0, 51, 102)"
-                  style="color:rgb(0, 51, 102)" target="_blank">Prof. Dr. Hans-Peter Seidel</a>. My Ph.D. research focused on GPU-based real-time rendering, where I had the opportunity to collaborate closely with <a href="https://jankautz.com/"
-                  style="color:rgb(0, 51, 102)" target="_blank">Prof. Jan Kautz</a>.
-              Throughout my academic journey, I also visited the <a href="http://research.microsoft.com/en-us/groups/ig/"
-              style="color:rgb(0, 51, 102)" target="_blank">Internet Graphics Group</a> at <a
-              href="http://research.microsoft.com/en-us/labs/asia/default.aspx" style="color:rgb(0, 51, 102)"
-              target="_blank">MSRA</a>，working with <a href="http://www.cad.zju.edu.cn/home/xgliu/"
-              style="color:rgb(0, 51, 102)" target="_blank">Prof. Xinguo Liu</a> and <a
-              href="http://research.microsoft.com/en-us/groups/graphics/" style="color:rgb(0, 51, 102)"
-              target="_blank">Computer Graphics Group</a> at <a
-              href="http://research.microsoft.com/en-us/labs/redmond/default.aspx" style="color:rgb(0, 51, 102)"
-              target="_blank">MSR</a>, under the mentorship of <a
-              href="http://research.microsoft.com/en-us/um/people/johnsny/" style="color:rgb(0, 51, 102)"
-              target="_blank">Dr. John Snyder</a>. These experiences, alongside the invaluable mentorship of my advisors, have profoundly shaped my research and career. I am deeply grateful for the knowledge and inspiration I have gained from them.
-              </p>
-            </div>
-          </div>
-        </td>
+        <td class="nav-cell"><a href="#research">Research Interests</a></td>
+        <td class="nav-cell"><a href="#academic">Academic Activities</a></td>
+        <td class="nav-cell"><a href="#education">Education</a></td>
+        <td class="nav-cell"><a href="#professional">Professional Experiences</a></td>
+        <td class="nav-cell"><a href="#publication">Publications</a></td>
       </tr>
     </table>
-  </div>
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-  <!--Main content-->
-  <!--<div style="position:relative;top:150px;"> -->
+  </nav>
+
+  <!-- Content Sections -->
+  <main class="content-section">
+    <!-- Research Interests -->
+    <section id="research">
+      <div class="section-title">Research Interests</div>
+      <ul class="research-list">
+        <li>3D Object/Scene Reconstruction</li>
+        <li>Inverse/Differentiable Rendering</li>
+        <li>Generative AI for 3D (Gen3D)</li>
+        <li>Robotics Learning & Simulation</li>
+        <li>Neural/Real-time/Offline Rendering</li>
+        <li>Photorealistic Materials & Lighting</li>
+      </ul>
+    </section>
+
+    <br>
+
+    <!-- Academic Activities -->
+    <section id="academic">
+      <div class="section-title">Academic Activities</div>
+      <ul class="activities-list">
+        <li>Paper Committee Member for:
+          <ul class="nested-list">
+            <li>ACM SIGGRAPH 2025</li>
+            <li>ACM I3D 2012-2016</li>
+            <li>PACIFIC GRAPHICS 2012-2016</li>
+            <li>CAD/Graphics 2013</li>
+          </ul>
+        </li>
+        <li>Paper Reviewer for:
+          <ul class="nested-list">
+            <li>SIGGRAPH; SIGGRAPH ASIA; CVPR/ICCV/ECCV, Eurographics Symposium on Rendering (EGSR); High Performance Graphics; Eurographics; ACM I3D; Pacific Graphics;...</li>
+            <li>ACM Transactions on Graphics (TOG); IEEE Transactions on Visualization and Computer Graphics (TVCG); IEEE Transactions on Image Processing (TIP); Computer Graphics Forum; the Visual Computer; Information Sciences; Neurocomputing; Journal of Computer Science and Technology;...</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <br>
+
+    <!-- Education -->
+    <section id="education">
+      <div class="section-title">Education</div>
+      <ul class="education-list">
+        <li><strong>September 2005 - February 2011:</strong><br>
+          Ph.D. in the <a href="http://www.mpi-inf.mpg.de/departments/d4/" target="_blank">Computer Graphics Department</a> of <a href="http://www.mpi-inf.mpg.de/" target="_blank">Max-Planck-Institut für Informatik</a> and the <a href="http://www.cs.uni-saarland.de/" target="_blank">Universität des Saarlandes</a>, Saarbrücken, Germany.<br>
+          Ph.D. Thesis: <a href="http://scidok.sulb.uni-saarland.de/volltexte/2011/3680/pdf/Dissertation_175_Dong_Zhao_2011.pdf" target="_blank">Visually Pleasing Real-time Global Illumination Rendering for Fully-dynamic Scenes.</a> (Supervisor: <a href="http://www.mpi-inf.mpg.de/~hpseidel/" target="_blank">Prof. Dr. Hans-Peter Seidel</a>).
+        </li>
+        <li><strong>September 2002 - April 2005:</strong><br>
+          M.Sc. in Computer Science at Zhejiang University<br>
+          Master Thesis: Relevant Technology Study on Programmable Graphics Hardware(In Chinese).<br>
+          (Supervisors: <a href="http://www.cad.zju.edu.cn/home/peng" target="_blank">Prof. Qunsheng Peng</a> and <a href="http://www.cad.zju.edu.cn/home/chenwei" target="_blank">Associate Prof. Wei Chen</a>) (<a href="https://drive.google.com/file/d/1qnRsnraYVkwah2HWE4F_OhLp-JGiX_5N/view?usp=sharing" target="_blank">PDF</a>)
+        </li>
+        <li><strong>September 1997 - June 2001</strong><br>
+          Bachelor in Polymer Engineering and Secondary Bachelor in Computer Science, <a href="http://www.zju.edu.cn/" target="_blank">Zhejiang University</a>
+        </li>
+      </ul>
+    </section>
+
+    <br>
+
+    <!-- Professional Experiences -->
+    <section id="professional">
+      <div class="section-title">Professional Experiences</div>
+      <ul class="professional-list">
+        <li><a href="https://www.linkedin.com/in/flycooler/" target="_blank">LinkedIn</a></li>
+        <li><a href="https://scholar.google.com/citations?user=51ZIHGIAAAAJ&hl=en" target="_blank">Google Scholar</a></li>
+      </ul>
+    </section>
+
+    <br>
+
+    <!-- Publications -->
+    <section id="publication">
+      <div class="section-title">Publications</div>
+      
+      <div class="publication-item">
+        <img src="Images/MonoGS_SIG2025.jpg" alt="SIGGRAPH 2025 MonoGS" height="90" width="179">
+        <div class="publication-details">
+          <p>
+            <a href="https://poiw.github.io/">Songyin Wu</a>, <a href="https://lvzhaoyang.github.io/">Zhaoyang Lv</a>, <a href="https://mike323zyf.github.io/">Yufeng Zhu</a>, <a href="https://scholar.google.com/citations?user=P9l4zHIAAAAJ&hl=fr">Duncan Frost</a>, <a href="https://sites.google.com/a/eng.ucsd.edu/zhengqinli">Zhengqin Li</a>, <a href="https://sites.cs.ucsb.edu/~lingqi/">Lingqi Yan</a>, <a href="https://www.carlyuheng.com/">Carl Ren</a>, <a href="https://scholar.google.co.uk/citations?user=MhowvPkAAAAJ&hl=en">Richard Newcombe</a>, <b>Zhao Dong</b>. "<i>Monocular Online Reconstruction with Enhanced Detail Preservation</i>", <a href="https://s2025.siggraph.org/">SIGGRAPH 2025 (Conference Track)</a>. (<a href="https://poiw.github.io/MODP/index.html">Project Page</a>, <a href="https://arxiv.org/abs/2505.07887">Paper (arXiv)</a>).
+          </p>
+        </div>
+      </div>
+
+      <div class="publication-item">
+        <img src="Images/PhotoRealGS_SIG2025.jpg" alt="SIGGRAPH 2025 PhotorealGS" height="90" width="179">
+        <div class="publication-details">
+          <p>
+            <a href="https://lvzhaoyang.github.io/">Zhaoyang Lv</a>, <a href="https://scholar.google.com/citations?user=gpgb4LgAAAAJ&hl=en">Maurizio Monge</a>, <a href="https://www.linkedin.com/in/ka-chen-ab116a31/">Ka Chen</a>, <a href="https://mike323zyf.github.io/">Yufeng Zhu</a>, <a href="https://scholar.google.com/citations?user=56UhAooAAAAJ&hl=en">Michael Goesele</a>, <a href="https://jakobengel.github.io/">Jakob Engel</a>, <b>Zhao Dong</b>, <a href="https://scholar.google.co.uk/citations?user=MhowvPkAAAAJ&hl=en">Richard Newcombe</a>. "<i>Photoreal Scene Reconstruction from an Egocentric Device</i>", <a href="https://s2025.siggraph.org/">SIGGRAPH 2025 (Conference Track)</a>. (Project Page, Paper (arXiv)).
+          </p>
+        </div>
+      </div>
+
+      <div class="publication-item">
+        <img src="Images/Diffadapt_SIG2025.jpg" alt="SIGGRAPH 2025 DiffAdapt" height="90" width="179">
+        <div class="publication-details">
+          <p>
+            <a href="https://yank.ai/#/">Kai Yan</a>, <a href="https://holmes969.github.io">Cheng Zhang</a>, <a href="https://speierers.github.io/">Sébastien Speierer</a>, <a href="https://guangyancai.me/">Guangyan Cai</a>, <a href="https://mike323zyf.github.io/">Yufeng Zhu</a>, <b>Zhao Dong</b>, <a href="https://shuangz.com/">Shuang Zhao</a>. "<i>Image-Space Adaptive Sampling for Fast Inverse Rendering</i>", <a href="https://s2025.siggraph.org/">SIGGRAPH 2025 (Conference Track)</a>. (<a href="https://shuangz.com/projects/adaptive-batching-sg25/adaptive-batching-sg25.pdf">Paper</a>).
+          </p>
+        </div>
+      </div>
+
+      <div class="publication-item">
+        <img src="Images/DTC_CVPR2025.jpg" alt="CVPR 2025 DTC" height="90" width="179">
+        <div class="publication-details">
+          <p>
+            <b>Zhao Dong</b>, <a href="https://www.linkedin.com/in/ka-chen-ab116a31/">Ka Chen<sup>*</sup></a>, <a href="https://lvzhaoyang.github.io/">Zhaoyang Lv<sup>*</sup></a>, <a href="https://kovenyu.com/">Hong-Xing Yu<sup>*</sup></a>, <a href="https://cs.stanford.edu/~yzzhang/">Yunzhi Zhang<sup>*</sup></a>, <a href="https://holmes969.github.io">Cheng Zhang<sup>*</sup></a>, <a href="https://mike323zyf.github.io/">Yufeng Zhu<sup>*</sup></a>, <a href="https://s-tian.github.io/">Stephen Tian</a>, <a href="https://sites.google.com/a/eng.ucsd.edu/zhengqinli">Zhengqin Li</a>, <a href="https://www.linkedin.com/in/geordiemoffatt/">Geordie Moffatt</a>, <a href="https://www.linkedin.com/in/sean-christofferson-a61b59b0/">Sean Christofferson</a>, <a href="https://www.linkedin.com/in/jamesfort4/">James Fort</a>, <a href="https://www.linkedin.com/in/xiaqing-pan/">Xiaqing Pan</a>, <a href="https://www.linkedin.com/in/mingfei-yan-b5706615/">Mingfei Yan</a>, <a href="https://jiajunwu.com/">Jiajun Wu</a>, <a href="https://www.carlyuheng.com/">Carl Ren</a>, <a href="https://scholar.google.co.uk/citations?user=MhowvPkAAAAJ&hl=en">Richard Newcombe</a>. "<i>Digital Twin Catalog: A Large-Scale Photorealistic 3D Object Digital Twin Dataset</i>", (<sup>*</sup>Authors contributed equally and are listed in alphabetical order.) <a href="https://cvpr.thecvf.com/Conferences/2025">CVPR 2025 <b>(Highlight)</b></a>. (<a href="https://www.projectaria.com/datasets/dtc/">Dataset Page</a>, <a href="https://arxiv.org/abs/2504.08541">Paper (arXiv)</a>).
+          </p>
+        </div>
+      </div>
+
+      <div class="publication-item">
+        <img src="Images/LIRM_CVPR2025.png" alt="CVPR 2025 LIRM" height="90" width="179">
+        <div class="publication-details">
+          <p>
+            <a href="https://sites.google.com/a/eng.ucsd.edu/zhengqinli">Zhengqin Li</a>, <a href="https://wdilin.github.io/">Dilin Wang</a>, <a href="https://www.linkedin.com/in/ka-chen-ab116a31/">Ka Chen</a>, <a href="https://lvzhaoyang.github.io/">Zhaoyang Lv</a>, <a href="https://www.monkeyoverflow.com/about">Thu Nguyen-Phuoc</a>, <a href="https://www.linkedin.com/in/milimlee/">Milim Lee</a>, <a href="https://jbhuang0604.github.io">Jia-Bin Huang</a>, <a href="https://leixiao-ubc.github.io">Lei Xiao</a>, <a href="https://mike323zyf.github.io/">Yufeng Zhu</a>, <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=xWD7ZRkAAAAJ&sortby=pubdate">Carl Marshall</a>, <a href="https://www.carlyuheng.com/">Carl Ren</a>, <a href="https://scholar.google.co.uk/citations?user=MhowvPkAAAAJ&hl=en">Richard Newcombe</a>, <b>Zhao Dong</b>. "<i>Large Inverse Rendering Model for Progressive Reconstruction of Shape, Materials and View-dependent Radiance Fields</i>", <a href="https://cvpr.thecvf.com/Conferences/2025">CVPR 2025</a>. (<a href="https://lzqsd.github.io/LIRM.github.io/">Project Page</a>, <a href="https://arxiv.org/abs/2504.20026">Paper (arXiv)</a>).
+          </p>
+        </div>
+      </div>
+
+      <div class="publication-item">
+        <img src="Images/Iris_CVPR2025.jpg" alt="CVPR 2025 IRIS" height="100" width="179">
+        <div class="publication-details">
+          <p>
+            <a href="https://zhihao-lin.github.io/">Zhi-Hao Lin</a>, <a href="https://jbhuang0604.github.io">Jia-Bin Huang</a>, <a href="https://sites.google.com/a/eng.ucsd.edu/zhengqinli">Zhengqin Li</a>, <b>Zhao Dong</b>, <a href="https://richardt.name/">Christian Richardt</a>, <a href="https://scholar.google.com/citations?user=jGQeuBUAAAAJ">Tuotuo Li</a>, <a href="https://zollhoefer.com/">Michael Zollhöfer</a>, <a href="https://johanneskopf.de/">Johannes Kopf</a>, <a href="https://shenlong.web.illinois.edu/">Shenlong Wang</a>, <a href="https://changilkim.com">Changil Kim</a>. "<i>IRIS: Inverse Rendering of Indoor Scenes from Low Dynamic Range Images</i>", <a href="https://cvpr.thecvf.com/Conferences/2025">CVPR 2025</a>. (<a href="https://irisldr.github.io/">Project Page</a>, <a href="https://arxiv.org/abs/2401.12977">Paper</a>).
+          </p>
+        </div>
+      </div>
+
+      <div class="publication-item">
+        <img src="Images/Texturedreamer_CVPR24.jpg" alt="CVPR 2024 Texture Dreamer" height="90" width="179">
+        <div class="publication-details">
+          <p>
+            <a href="https://yuyingyeh.github.io/">Yu-ying Yeh</a>, <a href="https://jbhuang0604.github.io">Jia-Bin Huang</a>, <a href="https://changilkim.com">Changil Kim</a>, <a href="https://leixiao-ubc.github.io">Lei Xiao</a>, <a href="https://www.monkeyoverflow.com/about">Thu Nguyen-Phuoc</a>, <a href="https://nkhan2.github.io">Numair Khan</a>, <a href="https://holmes969.github.io">Cheng Zhang</a>, <a href="https://cseweb.ucsd.edu/~mkchandraker/">Manmohan Chandraker</a>, <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=xWD7ZRkAAAAJ&sortby=pubdate">Carl Marshall</a>, <b>Zhao Dong</b>, <a href="https://sites.google.com/a/eng.ucsd.edu/zhengqinli">Zhengqin Li</a>. "<i>TextureDreamer: Image-guided Texture Synthesis through Geometry-aware Diffusion</i>", <a href="https://cvpr.thecvf.com/Conferences/2024">CVPR 2024</a>. (<a href="https://texturedreamer.github.io/">Project Page</a>, <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Yeh_TextureDreamer_Image-Guided_Texture_Synthesis_Through_Geometry-Aware_Diffusion_CVPR_2024_paper.pdf">Paper</a>).
+          </p>
+        </div>
+      </div>
+
+      <div class="publication-item">
+        <img src="Images/NeRF_Analogy.png" alt="CVPR 2024 NeRF Analogy" height="80" width="179">
+        <div class="publication-details">
+          <p>
+            <a href="https://mfischer-ucl.github.io/">Michael Fischer</a>, <a href="https://sites.google.com/a/eng.ucsd.edu/zhengqinli">Zhengqin Li</a>, <a href="https://www.monkeyoverflow.com/about">Thu Nguyen-Phuoc</a>, <a href="https://aljazbozic.github.io/">Aljaž Božič</a>, <b>Zhao Dong</b>, <a href="https://www.homepages.ucl.ac.uk/~ucactri/">Tobias Ritschel</a>, <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=xWD7ZRkAAAAJ&sortby=pubdate">Carl Marshall</a>. "<i>NeRF Analogies: Example-Based Visual Attribute Transfer for NeRFs</i>", <a href="https://cvpr.thecvf.com/Conferences/2024">CVPR 2024</a>. (<a href="https://mfischer-ucl.github.io/nerf_analogies/">Project Page</a>, <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Fischer_NeRF_Analogies_Example-Based_Visual_Attribute_Transfer_for_NeRFs_CVPR_2024_paper.pdf">Paper</a>).
+          </p>
+        </div>
+      </div>
+
+      <div class="publication-item">
+        <img src="Images/brdf_estimation.jpg" alt="EGSR 2024 Uncertainty" height="85" width="179">
+        <div class="publication-details">
+          <p>
+            <a href="https://scholar.google.com/citations?user=0lGfaCIAAAAJ&hl=en">Zhiqian Zhou</a>, <a href="https://holmes969.github.io">Cheng Zhang</a>, <b>Zhao Dong</b>, <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=xWD7ZRkAAAAJ&sortby=pubdate">Carl Marshall</a>, <a href="https://shuangz.com/">Shuang Zhao</a>. "<i>Estimating Uncertainty in Appearance Acquisition</i>", <a href="https://www.egsr2024.uk/">EGSR 2024</a>. (<a href="https://drive.google.com/file/d/16Nwjs3QrFnwLh8f47CwoEu0YKKIwFGpT/view?usp=sharing">Paper</a>).
+          </p>
+        </div>
+      </div>
+
+      <div class="publication-item">
+        <img src="Images/Diff-Indirection-SIGAsia2023.jpg" alt="SIGAsia2023 Diff. Indirection" height="90" width="179">
+        <div class="publication-details">
+          <p>
+            <a href="https://sayan1an.github.io/menu2.html">Sayantan Datta</a>, <a href="https://www.linkedin.com/in/carl-s-marshall">Carl Marshall</a>, <a href="https://www.cim.mcgill.ca/~derek/">Derek Nowrouzezahrai</a>, <b>Zhao Dong</b>, <a href="https://sites.google.com/a/eng.ucsd.edu/zhengqinli">Zhengqin Li</a>. "<i>Efficient Graphics Representation with Differentiable Indirection</i>", <a href="https://asia.siggraph.org/2023/">SIGGRAPH Asia 2023</a>. (<a href="https://sayan1an.github.io/din.html">Project Page</a>, <a href="https://drive.google.com/file/d/1z63OFV0OhcRIZnCX3psNlHrFEL5iCJiT/view?usp=sharing">Paper</a>).
+          </p>
+        </div>
+      </div>
+
+      <div class="publication-item">
+        <img src="Images/TOG-ML-Lighting.jpg" alt="TOG2023 ML Lighting" height="90" width="179">
+        <div class="publication-details">
+          <p>
+            <a href="https://sites.google.com/a/eng.ucsd.edu/zhengqinli">Zhengqin Li</a>, Li Yu, <a href="https://scholar.google.com/citations?user=_owXoG4AAAAJ&hl=en">Mikhail Okunev</a>, <a href="https://cseweb.ucsd.edu/~mkchandraker/">Manmohan Chandraker</a>, <b>Zhao Dong</b>. "<i>Spatiotemporally Consistent HDR Indoor Lighting Estimation</i>", <a href="http://tog.acm.org/">ACM Transactions on Graphics (TOG)</a>, 2023. (Presented at <a href="https://asia.siggraph.org/2023/">SIGGRAPH Asia 2023</a>). (<a href="https://drive.google.com/file/d/1uYFwJH0bZVxXPFnh5cYtZpfomVH_Rcco/view?usp=sharing">Paper</a>).
+          </p>
+        </div>
+      </div>
+
+      <div class="publication-item">
+        <img src="Images/Neural-PBIR-ICCV2023.jpg" alt="ICCV2023 Neural-PBIR" height="90" width="179">
+        <div class="publication-details">
+          <p>
+            <a href="https://sunset1995.github.io/">Cheng Sun</a>, <a href="https://guangyancai.me/">Guangyan Cai</a>, <a href="https://sites.google.com/a/eng.ucsd.edu/zhengqinli">Zhengqin Li</a>, <a href="https://yank.ai/">Kai Yan</a>, <a href="https://holmes969.github.io/">Cheng Zhang</a>, <a href="https://www.linkedin.com/in/carl-s-marshall">Carl Marshall</a>, <a href="https://jbhuang0604.github.io/">Jia-Bin Huang</a>, <a href="https://shuangz.com/">Shuang Zhao</a>, <b>Zhao Dong</b>. "<i>Neural-PBIR Reconstruction of Shape, Material, and Illumination</i>", <a href="https://iccv2023.thecvf.com/">ICCV 2023</a>. (<a href="https://neural-pbir.github.io/">Project Page</a>, <a href="https://drive.google.com/file/d/1nXopwTCfVXkscHpuMCP0sZ6Ju4O8Djja/view?usp=sharing">Paper</a>).
+          </p>
+        </div>
+      </div>
+
+      <div class="publication-item">
+        <img src="Images/PSAO-hpg2023.jpg" alt="HPG2023 PSAO" height="90" width="179">
+        <div class="publication-details">
+          <p>
+            <a href="https://thomasneff.github.io/">Thomas Neff</a>, <a href="https://scholar.google.com/citations?user=z67HnEwAAAAJ&hl=en">Brian Budge</a>, <b>Zhao Dong</b>, <a href="https://www.tugraz.at/institute/icg/research/team-schmalstieg/">Dieter Schmalstieg</a>, <a href="https://www.markussteinberger.net/">Markus Steinberger</a>. "<i>PSAO: Point-Based Split Rendering for Ambient Occlusion</i>", <a href="https://www.highperformancegraphics.org/2023/index.html">High-Performance Graphics (HPG) 2023</a>. (<a href="https://diglib.eg.org/handle/10.2312/hpg20231131">Paper & Video</a>, <a href="https://www.youtube.com/watch?app=desktop&v=uiSrBJ8WzNw">Talk</a>).
+          </p>
+        </div>
+      </div>
+
+      <div class="publication-item">
+        <img src="Images/psdr-volume-egsr23_teaser.jpg" alt="EGSR2023 PBDR volume" height="90" width="179">
+        <div class="publication-details">
+          <p>
+            <a href="https://zihan.me/">Zihan Yu</a>, <a href="https://holmes969.github.io/">Cheng Zhang</a>, Olivier Maury, Christophe Hery, <b>Zhao Dong</b>, <a href="https://shuangz.com/">Shuang Zhao</a>. "<i>Efficient Path-Space Differentiable Volume Rendering With Respect To Shapes</i>", <a href="https://conferences.eg.org/egsr2023/">Eurographics Symposium on Rendering (EGSR) 2023</a>. (<a href="https://shuangz.com/projects/psdr-vol2-egsr23/">Project Page</a>, <a href="https://drive.google.com/file/d/1J9AouVw2kmJ0TEpYy-su2X6-_fKj2YU3/view?usp=sharing">PDF(Preprint)</a>).
+          </p>
+        </div>
+      </div>
+
+      <div class="publication-item">
+        <img src="Images/psdr-pixel-sga22_teaser.jpg" alt="SIGASIA2022 PBDR Pixel" height="90" width="179">
+        <div class="publication-details">
+          <p>
+            <a href="https://zihan.me/">Zihan Yu</a>, <a href="https://holmes969.github.io/">Cheng Zhang</a>, <a href="https://www.cim.mcgill.ca/~derek/">Derek Nowrouzezahrai</a>, <b>Zhao Dong</b>, <a href="https://shuangz.com/">Shuang Zhao</a>. "<i>Efficient Differentiation of Pixel Reconstruction Filters for Path-Space Differentiable Rendering</i>", <a href="http://tog.acm.org/">ACM Transactions on Graphics (TOG)</a>, 41(6), 2022. (Proceedings of <a href="https://sa2022.siggraph.org/">SIGGRAPH Asia 2022</a>). (<a href="https://shuangz.com/projects2/psdr-pixel-sa22/">Project Page</a>, <a href="https://drive.google.com/file/d/1XtvmiXsYH8rktc5H-ltqffhL6FlJZdei/view?usp=drive_link">PDF(Preprint)</a>).
+          </p>
+        </div>
+      </div>
+
+      <div class="publication-item">
+        <img src="Images/Wol22_siga22_teaser1.jpg" alt="SIGASIA2022 WOL" height="90" width="179">
+        <div class="publication-details">
+          <p>
+            <a href="https://people.mpi-inf.mpg.de/~kwolski/">Krzysztof Wolski</a>, <a href="https://www.auract.net/">Laura Trutoiu</a>, <b>Zhao Dong</b>, Zhengyang Shen, Kevin MacKenzie, <a href="https://achapiro.github.io/">Alex Chapiro</a>. "<i>Geo-metric: A Perceptual Dataset of Distortions on Faces</i>", <a href="http://tog.acm.org/">ACM Transactions on Graphics (TOG)</a>, 41(6), 2022. (Proceedings of <a href="https://sa2022.siggraph.org/">SIGGRAPH Asia 2022</a>). (<a href="https://drive.google.com/file/d/1nM_cN6geIYtZ6C04XlXnknj-Wifm8yRA/view?usp=drive_link">PDF(Preprint)</a>, <a href="https://github.com/facebookresearch/Geo-metric">Code/Data</a>).
+          </p>
+        </div>
+      </div>
+
+      <div class="publication-item">
+        <img src="Images/psdr-aq-sg22_teaser.jpg" alt="SIG2022 PBDR Envlight" height="90" width="179">
+        <div class="publication-details">
+          <p>
+            <a href="http://www.kyan.ai/">Kai Yan</a>, <a href="https://christophlassner.de/">Christoph Lassner</a>, <a href="https://scholar.google.com/citations?user=z67HnEwAAAAJ&hl=en">Brian Budge</a>, <b>Zhao Dong</b>, <a href="https://shuangz.com/">Shuang Zhao</a>. "<i>Efficient Estimation of Boundary Integrals for Path-Space Differentiable Rendering</i>", <a href="http://tog.acm.org/">ACM Transactions on Graphics (TOG)</a>, 2022. (Proceedings of <a href="https://s2022.siggraph.org/">SIGGRAPH 2022</a>). (<a href="https://shuangz.com/projects/psdr-aq-sg22/">Project Page</a>, <a href="https://drive.google.com/file/d/1VYU0GopJEZl4LUtDoqyXCLk8iBFipjJk/view?usp=drive_link">PDF(Preprint)</a>, <a href="https://drive.google.com/file/d/124J0W7mI00iScIxnLRJZlo9aoDtLisP7/view?usp=drive_link">Supplemental Material</a>).
+          </p>
+        </div>
+      </div>
+
+      <div class="publication-item">
+        <img src="Images/neural-sm-sg22.jpg" alt="SIG2022 Neural SM" height="90" width="179">
+        <div class="publication-details">
+          <p>
+            <a href="https://sayan1an.github.io/index.html">Sayantan Datta</a>, <a href="https://www.cim.mcgill.ca/~derek/">Derek Nowrouzezahrai</a>, <a href="https://scholar.google.ca/citations?user=STYtYHwAAAAJ&hl=en&oi=ao">Christoph Schied</a>, <b>Zhao Dong</b>. "<i>Neural Shadow Mapping</i>", <a href="https://s2022.siggraph.org/">SIGGRAPH 2022</a>. (<a href="https://sayan1an.github.io/neuralShadowMapping.html">Project Page</a>, <a href="download/neuralShadowMapping.pdf">PDF(Preprint)</a>, <a href="download/neuralShadowMappingSupplemental.pdf">Supplemental Material</a>, <a href="https://drive.google.com/file/d/1xfWI5ezigp2Ztvd7lSpLOt4O8PAqSCQ3/view?usp=sharing">Video</a>).
+          </p>
+        </div>
+      </div>
+
+      <div class="publication-item">
+        <img src="Images/psdr-meshsdf-egsr2022.jpg" alt="EGSR2022 Mesh SDF" height="90" width="179">
+        <div class="publication-details">
+          <p>
+            <a href="https://guangyancai.github.io/">Guangyan Cai</a>, <a href="http://www.kyan.ai/">Kai Yan</a>, <b>Zhao Dong</b>, <a href="https://www.cs.cmu.edu/~igkioule/">Ioannis Gkioulekas</a>, <a href="https://shuangz.com/">Shuang Zhao</a>. "<i>Physics-Based Inverse Rendering using Combined Implicit and Explicit Geometries</i>", <a href="https://egsr.eu/2022/">Eurographics Symposium on Rendering (EGSR) 2022</a>. (<a href="https://shuangz.com/projects/psdr-meshsdf-egsr22/">Project Page</a>, <a href="https://drive.google.com/file/d/1rj6g3oAp3gTVX3zOL1jaOQ4QTX4SVxDd/view?usp=drive_link">PDF(Preprint)</a>, <a href="https://drive.google.com/file/d/1OkuO63s1_OW_i2KXmXzlorf2xILUo0PH/view?usp=drive_link">Supplemental Material</a>).
+          </p>
+        </div>
+      </div>
+
+      <div class="publication-item">
+        <img src="Images/teaser_sig2021.png" alt="SIG2021 PBDR Sampling" height="90" width="179">
+        <div class="publication-details">
+          <p>
+            <a href="https://www.ics.uci.edu/~chengz20/">Cheng Zhang</a>, <b>Zhao Dong</b>, <a href="https://cs.lth.se/michael-doggett/">Michael Doggett</a>, <a href="https://shuangz.com/">Shuang Zhao</a>. "<i>Antithetic Sampling for Monte Carlo Differentiable Rendering</i>", <a href="http://tog.acm.org/">ACM Transactions on Graphics (TOG)</a>, 40(4), 2021. (Proceedings of <a href="https://s2021.siggraph.org/">SIGGRAPH 2021</a>). (<a href="https://shuangz.com/projects/antithetic-sg21/">Project Page</a>, <a href="https://drive.google.com/file/d/11QK1ORwyr5OLj-EYknbYNro8j0kafjfd/view?usp=drive_link">PDF(Preprint)</a>, <a href="https://drive.google.com/file/d/1JZLToGIwDGSXpUsGF0Y7RyRTPsW4-DPN/view?usp=drive_link">Supplemental Material</a>).
+          </p>
+        </div>
+      </div>
+
+      <div class="publication-item">
+        <img src="Images/pbdr_scan_egsr2021.png" alt="EGSR2021 PBDR Object Scan" height="90" width="179">
+        <div class="publication-details">
+          <p>
+            <a href="https://www.cs.cornell.edu/~fujun/">Fujun Luan</a>, <a href="https://shuangz.com/">Shuang Zhao</a>, <a href="https://www.cs.cornell.edu/~kb/">Kavita Bala</a>, <b>Zhao Dong</b>. "<i>Unified Shape and SVBRDF Recovery using Differentiable Monte Carlo Rendering</i>", <a href="https://egsr.eu/2021/">Eurographics Symposium on Rendering (EGSR) 2021</a>. (<a href="https://luanfujun.github.io/InverseMeshSVBRDF/">Project Page</a>, <a href="https://drive.google.com/file/d/1KOk5d2Sr6Q8oE02DsJBwxZ3rD3OCaeCy/view?usp=drive_link">PDF(Preprint)</a>, <a href="https://drive.google.com/file/d/1-3GGWYtuH2m2U7CmuE3o3HAoG5Z_R_xv/view?usp=drive_link">Supplemental Material</a>).
+          </p>
+        </div>
+      </div>
+
+      <div class="publication-item">
+        <img src="Images/pbdr_room_egsr2021.png" alt="EGSR2021 PBDR Room Recon" height="90" width="179">
+        <div class="publication-details">
+          <p>
+            <a href="https://rgl.epfl.ch/people/mnimierdavid">Merlin Nimier-David</a>, <b>Zhao Dong</b>, <a href="https://rgl.epfl.ch/people/wjakob">Wenzel Jakob</a>, <a href="http://kaplanyan.com/">Anton Kaplanyan</a>. "<i>Material and lighting reconstruction for complex indoor scenes with texture-space differentiable rendering</i>", <a href="https://egsr.eu/2021/">Eurographics Symposium on Rendering (EGSR) 2021</a>. (<a href="https://rgl.epfl.ch/publications/NimierDavid2021Material">Project Page</a>, <a href="https://drive.google.com/file/d/1mO7_-ELHFeGCjE1zsJAzBpR0gG29T0lC/view?usp=drive_link">PDF(Preprint)</a>, <a href="https://drive.google.com/file/d/17BRg79fOOfey5qM-M_2-XsZZ6-9EBF0A/view?usp=drive_link">Supplemental Material</a>).
+          </p>
+        </div>
+      </div>
+      
+    </section>
+  </main>
+
+  <!-- Analytics -->
   <div>
-    <table align="center" border="0" bordercolor="#888" cellspacing="0"
-      style="text-align:center;border-collapse:collapse;border-top-color:rgb(136, 136, 136);border-right-color:rgb(136, 136, 136);border-bottom-color:rgb(136, 136, 136);border-left-color:rgb(136, 136, 136);border-top-width:0px;border-right-width:0px;border-bottom-width:0px;border-left-width:0px;color:rgb(0, 51, 102);font-family:Helvetica, Verdana, Arial, sans-serif;font-size:14px;line-height:1.5">
-      <tbody>
-        <tr>
-          <td align="center" style="width:158px;height:21px"><b> <a href="http://www.flycooler.com/#research"
-                style="color:rgb(0, 51, 102)">Research Interests</a></b></td>
-          <td align="center" style="width:221px;height:21px"><b><a href="http://www.flycooler.com/#academic"
-                style="color:rgb(0, 51, 102)">Academic Activities</a></b></td>
-          <td align="center" style="width:137px;height:21px"><b><a href="http://www.flycooler.com/#education"
-                style="color:rgb(0, 51, 102)">Education</a> </b></td>
-          <td align="center" style="width:223px;height:21px"><b><a href="http://www.flycooler.com/#professional"
-                style="color:rgb(0, 51, 102)">Professional Experiences</a></b> </td>
-          <td align="center" style="width:243px;height:21px"><b><a href="http://www.flycooler.com/#publication"
-                style="color:rgb(0, 51, 102)">Publications</a></b> </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-  <div style="position:relative;top:20px;display:block;text-align:left"><i><span
-        style="border-collapse:collapse;font-family:Helvetica, Verdana, Arial, sans-serif;font-size:14px"><b><span
-            style="border-collapse:separate;font-style:normal;font-weight:normal">
-            <div style="display:block;text-align:left"><span
-                style="border-collapse:collapse;color:rgb(0, 51, 102);font-family:Helvetica, Verdana, Arial, sans-serif;font-size:14px;line-height:21px"><a
-                  name="research"><b>Research Interests</b></a></span></div>
-            <ul
-              style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:2em;padding-top:0.25em;padding-right:0px;padding-bottom:0px;padding-left:1em;line-height:normal;color:rgb(0, 51, 102)">
-              <li style="line-height:1.5;list-style-type:square;list-style-position:initial;padding-right:1em">3D Object/Scene Reconstruction</li>
-              <li style="line-height:1.5;list-style-type:square;list-style-position:initial;padding-right:1em">Inverse/Differentiable Rendering</li>
-              <li style="line-height:1.5;list-style-type:square;list-style-position:initial;padding-right:1em">Generative AI for 3D (Gen3D)</li>
-              <li style="line-height:1.5;list-style-type:square;list-style-position:initial;padding-right:1em">Neural/Real-time/Offline Rendering</li>
-              <li style="line-height:1.5;list-style-type:square;list-style-position:initial;padding-right:1em">Photorealistic Materials & Lighting</li>
-            </ul>
-
-            <div><span style="font-family:Arial, Verdana, sans-serif;font-size:13px"><i><span
-                    style="border-collapse:collapse;font-family:Helvetica, Verdana, Arial, sans-serif;font-size:14px"><b><span
-                        style="border-collapse:separate;font-style:normal;font-weight:normal">
-                        <div style="display:inline !important">
-                          <font color="#003366"><span style="line-height:21px"><span
-                                style="color:rgb(68, 68, 68);font-family:Arial, Verdana, sans-serif;font-size:13px;line-height:20px"><i><span
-                                    style="border-collapse:collapse;font-family:Helvetica, Verdana, Arial, sans-serif;font-size:14px"><b><span
-                                        style="border-collapse:separate;font-style:normal;font-weight:normal">
-                                        <div style="color:rgb(0, 51, 102);display:inline !important"><span
-                                            style="line-height:18px"><a name="academic"><b>Academic
-                                                Activities</b></a></span></div>
-                                      </span></b></span></i></span></span></font>
-                        </div>
-                      </span></b></span></i></span></div>
-            <div><span style="font-family:Arial, Verdana, sans-serif;font-size:13px"><i><span
-                    style="border-collapse:collapse;font-family:Helvetica, Verdana, Arial, sans-serif;font-size:14px"><b><span
-                        style="border-collapse:separate;font-style:normal;font-weight:normal">
-                        <div style="color:rgb(0, 51, 102)"><a name="professional"
-                            style="color:rgb(0, 51, 204);text-decoration:underline;line-height:18px"></a>
-                          <ul
-                            style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:2em;padding-top:0.25em;padding-right:0px;padding-bottom:0px;padding-left:1em">
-                            <span style="line-height:18px"><a name="academic"
-                                style="color:rgb(0, 51, 204);text-decoration:underline"></a></span>
-                            <li
-                              style="list-style-position:initial;list-style-type:square;line-height:1.5;padding-right:1em">
-                              Paper Committee Member for: </li>
-                              <ul style="line-height:18px">
-                                <li
-                                  style="list-style-position:initial;list-style-type:square;line-height:1.5;padding-right:1em">
-                                  <span style="font-size:14px;line-height:16px">ACM SIGGRAPH 2025</span>
-                                </li>
-                              </ul>
-                              <ul style="line-height:18px">
-                              <li
-                                style="list-style-position:initial;list-style-type:square;line-height:1.5;padding-right:1em">
-                                <span style="font-size:14px;line-height:16px">ACM I3D 2012-2016</span>
-                              </li>
-                            </ul>
-                            <ul style="line-height:18px">
-                              <li
-                                style="list-style-position:initial;list-style-type:square;line-height:1.5;padding-right:1em">
-                                <span style="font-size:14px;line-height:16px">PACIFIC GRAPHICS 2012-2016</span>
-                              </li>
-                            </ul>
-                            <ul style="line-height:18px">
-                              <li
-                                style="list-style-position:initial;list-style-type:square;line-height:1.5;padding-right:1em">
-                                <span style="font-size:14px;line-height:16px">CAD/Graphics 2013</span>
-                              </li>
-                            </ul>
-                            <li
-                              style="list-style-position:initial;list-style-type:square;line-height:1.5;padding-right:1em">
-                              Paper Reviewer for: </li>
-                            <ul style="line-height:18px">
-                              <li
-                                style="list-style-position:initial;list-style-type:square;line-height:1.5;padding-right:1em">
-                                <span style="font-size:14px;line-height:16px">SIGGRAPH; SIGGRAPH ASIA; CVPR/ICCV/ECCV, Eurographics
-                                  Symposium on Rendering (EGSR); High Performance Graphics; Eurographics; ACM I3D;
-                                  Pacific Graphics;...</span>
-                              </li>
-                              <li
-                                style="list-style-position:initial;list-style-type:square;line-height:1.5;padding-right:1em">
-                                <span style="font-size:14px;line-height:16px">ACM Transactions on Graphics (TOG); IEEE
-                                  Transactions on Visualization and Computer Graphics (TVCG); IEEE Transactions on Image
-                                  Processing (TIP); Computer Graphics Forum; the Visual Computer; Information Sciences;
-                                  Neurocomputing; Journal of Computer Science and Technology;...</span> 
-                              </li>
-                            </ul>
-                          </ul>
-                          <div><span style="line-height:21px"><br />
-                            </span></div>
-                        </div>
-                      </span></b></span></i></span></div>
-            <div>
-              <font color="#003366"><span style="line-height:18px"><a name="education"><b>Education</b></a></span>
-              </font>
-            </div>
-            <div>
-              <font color="#003366"><span style="line-height:18px"><span style="font-size:14px;line-height:normal">
-                    <ul
-                      style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:2em;padding-top:0.25em;padding-right:0px;padding-bottom:0px;padding-left:1em">
-                      <li style="line-height:1.5;list-style-type:square;list-style-position:initial;padding-right:1em">
-                        September 2005 - February 2011:<br />
-                        Ph.D. in the <a href="http://www.mpi-inf.mpg.de/departments/d4/" style="color:rgb(0, 51, 102)"
-                          target="_blank">Computer Graphics Department</a> of <a href="http://www.mpi-inf.mpg.de/"
-                          style="color:rgb(0, 51, 102)" target="_blank">Max-Planck-Institut f&uumlr
-                          Informatik</a> and the <a href="http://www.cs.uni-saarland.de/" style="color:rgb(0, 51, 102)"
-                          target="_blank">Universit&aumlt des Saarlandes</a>, Saarbr&uumlcken, Germany.<br />
-                        Ph.D. Thesis: <a
-                          href="http://scidok.sulb.uni-saarland.de/volltexte/2011/3680/pdf/Dissertation_175_Dong_Zhao_2011.pdf"
-                          target="_blank">Visually Pleasing Real-time Global Illumination Rendering for Fully-dynamic
-                          Scenes.</a> (Supervisor: <a href="http://www.mpi-inf.mpg.de/~hpseidel/"
-                          style="color:rgb(0, 51, 102)" target="_blank">Prof. Dr. Hans-Peter Seidel</a>).
-                      </li>
-                      <li style="line-height:1.5;list-style-type:square;list-style-position:initial;padding-right:1em">
-                        September 2002 - April 2005:<br />
-                        M.Sc. in Computer Science at Zhejiang University<br />
-                        Master Thesis: Relevant Technology Study on Programmable Graphics Hardware(In Chinese).
-                        (Supervisors: <a href="http://www.cad.zju.edu.cn/home/peng" style="color:rgb(0, 51, 102)"
-                          target="_blank">Prof. Qunsheng Peng</a> and <a href="http://www.cad.zju.edu.cn/home/chenwei"
-                          style="color:rgb(0, 51, 102)" target="_blank">Associate Prof. Wei Chen</a>) (<a
-                          href="https://drive.google.com/file/d/1qnRsnraYVkwah2HWE4F_OhLp-JGiX_5N/view?usp=sharing" style="color:rgb(0, 51, 102)" target="_blank">PDF</a>)<br />
-                      </li>
-                      <li style="line-height:1.5;list-style-type:square;list-style-position:initial;padding-right:1em">
-                        September 1997 - June 2001<br />
-                        Bachelor in Polymer Engineering and Secondary Bachelor in Computer Science, <a
-                          href="http://www.zju.edu.cn/" style="color:rgb(0, 51, 102)" target="_blank">Zhejiang
-                          University</a>
-                      </li>
-                    </ul>
-                  </span></span></font>
-            </div>
-            <div style="color:rgb(0, 51, 102)"><span style="line-height:18px"><br />
-              </span></div>
-            <div style="color:rgb(0, 51, 102)">
-              <div><span style="line-height:18px"><a name="professional"><b>Professional Experiences</b></a></span>
-              </div>
-              <ul
-                style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:2em;padding-top:0.25em;padding-right:0px;padding-bottom:0px;padding-left:1em">
-                <li style="line-height:1.5;list-style-type:square;list-style-position:initial;padding-right:1em">
-                  <a href="https://www.linkedin.com/in/flycooler/"
-                    style="color:rgb(0, 51, 102)" target="_blank">LinkedIn </a><br />
-                  </li>
-                <li style="line-height:1.5;list-style-type:square;list-style-position:initial;padding-right:1em">
-                  <a href="https://scholar.google.com/citations?user=51ZIHGIAAAAJ&hl=en"
-                    style="color:rgb(0, 51, 102)" target="_blank">Google Scholar </a><br />
-                </li>
-              </ul>
-              <div><span style="line-height:21px"><br />
-                </span></div>
-              <div><span style="line-height:21px"><a name="publication"><b>Publications</b></a></span></div>
-              <div><span style="line-height:21px"><span style="line-height:normal">
-                    <table border="0" width="100%">
-                      <tbody>
-                        <tr>
-                          <td>
-                            <img alt="SIGGRAPH 2025 MonoGS" border="0" height="90"
-                                src="Images/MonoGS_SIG2025.jpg"
-                                style="float:left;margin-top:1em;margin-right:1em;margin-bottom:0.3em;margin-left:1em"
-                                width="179" />                                                          
-                          </td>
-                          <td>
-                            <p
-                              style="line-height:1.5;padding-top:0.25em;padding-right:1em;padding-bottom:0.25em;padding-left:1em">
-                              <a href="https://poiw.github.io/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Songyin Wu</a>,
-                              <a href="https://lvzhaoyang.github.io/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Zhaoyang Lv</a>,
-                              <a href="https://mike323zyf.github.io/"
-                                style="color:rgb(0, 51, 102)" target="_blank">Yufeng Zhu</a>,
-                              <a href="https://scholar.google.com/citations?user=P9l4zHIAAAAJ&hl=fr" style="color:rgb(0, 51, 102)"
-                                target="_blank">Duncan Frost</a>,
-                              <a href="https://sites.google.com/a/eng.ucsd.edu/zhengqinli"
-                                style="color:rgb(0, 51, 102)" target="_blank">Zhengqin Li</a>,
-                              <a href="https://sites.cs.ucsb.edu/~lingqi/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Lingqi Yan</a>,                              
-                              <a href="https://www.carlyuheng.com/"
-                                style="color:rgb(0, 51, 102)" target="_blank">Carl Ren</a>,                              
-                              <a href="https://scholar.google.co.uk/citations?user=MhowvPkAAAAJ&hl=en"
-                                style="color:rgb(0, 51, 102)" target="_blank">Richard Newcombe</a>,
-                              <b>Zhao Dong</b>. 
-                                "<i>Monocular Online Reconstruction with Enhanced Detail Preservation</i>", <A
-                                href="https://s2025.siggraph.org/" style="color:rgb(0, 51, 102)"
-                                target="_blank">SIGGRAPH 2025 (Conference Track)</a>. (<a href="https://poiw.github.io/MODP/index.html"
-                                style="color:rgb(0, 51, 102)" target="_blank">Project Page</a>, <a
-                                href="https://arxiv.org/abs/2505.07887" style="color:rgb(0, 51, 102)"
-                                target="_blank">Paper (arXiv)</a>).                    
-                            </p>
-                          </td>
-                        </tr>
-
-                        <tr>
-                          <td>
-                            <img alt="SIGGRAPH 2025 PhotorealGS" border="0" height="90"
-                                src="Images/PhotoRealGS_SIG2025.jpg"
-                                style="float:left;margin-top:1em;margin-right:1em;margin-bottom:0.3em;margin-left:1em"
-                                width="179" />                                                          
-                          </td>
-                          <td>
-                            <p
-                              style="line-height:1.5;padding-top:0.25em;padding-right:1em;padding-bottom:0.25em;padding-left:1em">
-                              <a href="https://lvzhaoyang.github.io/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Zhaoyang Lv</a>,
-                              <a href="https://scholar.google.com/citations?user=gpgb4LgAAAAJ&hl=en" style="color:rgb(0, 51, 102)"
-                                target="_blank">Maurizio Monge</a>,
-                              <a href="https://www.linkedin.com/in/ka-chen-ab116a31/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Ka Chen</a>                              
-                              <a href="https://mike323zyf.github.io/"
-                                style="color:rgb(0, 51, 102)" target="_blank">Yufeng Zhu</a>,
-                              <a href="https://scholar.google.com/citations?user=56UhAooAAAAJ&hl=en" style="color:rgb(0, 51, 102)"
-                                target="_blank">Michael Goesele</a>,
-                              <a href="https://jakobengel.github.io/"
-                                style="color:rgb(0, 51, 102)" target="_blank">Jakob Engel</a>,
-                              <b>Zhao Dong</b>,
-                              <a href="https://scholar.google.co.uk/citations?user=MhowvPkAAAAJ&hl=en"
-                                style="color:rgb(0, 51, 102)" target="_blank">Richard Newcombe</a>. 
-                                "<i>Photoreal Scene Reconstruction from an Egocentric Device</i>", <A
-                                href="https://s2025.siggraph.org/" style="color:rgb(0, 51, 102)"
-                                target="_blank">SIGGRAPH 2025 (Conference Track)</a>. (Project Page, Paper (arXiv)).                    
-                            </p>
-                          </td>
-                        </tr>
-
-                        <tr>
-                          <td>
-                            <img alt="SIGGRAPH 2025 DiffAdapt" border="0" height="90"
-                                src="Images/Diffadapt_SIG2025.jpg"
-                                style="float:left;margin-top:1em;margin-right:1em;margin-bottom:0.3em;margin-left:1em"
-                                width="179" />                                                          
-                          </td>
-                          <td>
-                            <p
-                              style="line-height:1.5;padding-top:0.25em;padding-right:1em;padding-bottom:0.25em;padding-left:1em">
-                              <a href="https://yank.ai/#/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Kai Yan</a>,
-                              <a href="https://holmes969.github.io"
-                                style="color:rgb(0, 51, 102)" target="_blank">Cheng Zhang</a>,
-                              <a href="https://speierers.github.io/"
-                                style="color:rgb(0, 51, 102)" target="_blank">Sébastien Speierer</a>,
-                              <a href="https://guangyancai.me/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Guangyan Cai</a>,
-                              <a href="https://mike323zyf.github.io/"
-                                style="color:rgb(0, 51, 102)" target="_blank">Yufeng Zhu</a>,
-                              <b>Zhao Dong</b>,
-                              <a href="https://shuangz.com/"
-                                  style="color:rgb(0, 51, 102)" target="_blank">Shuang Zhao</a>. 
-                                "<i>Image-Space Adaptive Sampling for Fast Inverse Rendering</i>", <A
-                                href="https://s2025.siggraph.org/" style="color:rgb(0, 51, 102)"
-                                target="_blank">SIGGRAPH 2025 (Conference Track)</a>. (<a
-                                href="https://shuangz.com/projects/adaptive-batching-sg25/adaptive-batching-sg25.pdf" style="color:rgb(0, 51, 102)"
-                                target="_blank">Paper</a>).                    
-                            </p>
-                          </td>
-                        </tr>
-
-                        <tr>
-                          <td>
-                            <img alt="CVPR 2025 DTC" border="0" height="90"
-                                src="Images/DTC_CVPR2025.jpg"
-                                style="float:left;margin-top:1em;margin-right:1em;margin-bottom:0.3em;margin-left:1em"
-                                width="179" />                                                          
-                          </td>
-                          <td>
-                            <p
-                              style="line-height:1.5;padding-top:0.25em;padding-right:1em;padding-bottom:0.25em;padding-left:1em">
-                              <b>Zhao Dong</b>,
-                              <a href="https://www.linkedin.com/in/ka-chen-ab116a31/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Ka Chen<sup>*</sup></a>,
-                              <a href="https://lvzhaoyang.github.io/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Zhaoyang Lv<sup>*</sup></a>,
-                              <a href="https://kovenyu.com/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Hong-Xing Yu<sup>*</sup></a>,
-                              <a href="https://cs.stanford.edu/~yzzhang/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Yunzhi Zhang<sup>*</sup></a>,
-                              <a href="https://holmes969.github.io"
-                                style="color:rgb(0, 51, 102)" target="_blank">Cheng Zhang<sup>*</sup></a>,
-                              <a href="https://mike323zyf.github.io/"
-                                style="color:rgb(0, 51, 102)" target="_blank">Yufeng Zhu<sup>*</sup></a>,
-                              <a href="https://s-tian.github.io/"
-                                style="color:rgb(0, 51, 102)" target="_blank">Stephen Tian</a>,  
-                              <a href="https://sites.google.com/a/eng.ucsd.edu/zhengqinli"
-                                style="color:rgb(0, 51, 102)" target="_blank">Zhengqin Li</a>,
-                              <a href="https://www.linkedin.com/in/geordiemoffatt/"
-                                style="color:rgb(0, 51, 102)" target="_blank">Geordie Moffatt</a>,
-                              <a href="https://www.linkedin.com/in/sean-christofferson-a61b59b0/"
-                                style="color:rgb(0, 51, 102)" target="_blank">Sean Christofferson</a>,
-                              <a href="https://www.linkedin.com/in/jamesfort4/" style="color:rgb(0, 51, 102)"
-                                target="_blank">James Fort</a>,
-                              <a href="https://www.linkedin.com/in/xiaqing-pan/"
-                                style="color:rgb(0, 51, 102)" target="_blank">Xiaqing Pan</a>,                              
-                              <a href="https://www.linkedin.com/in/mingfei-yan-b5706615/"
-                                style="color:rgb(0, 51, 102)" target="_blank">Mingfei Yan</a>,
-                              <a href="https://jiajunwu.com/"
-                                style="color:rgb(0, 51, 102)" target="_blank">Jiajun Wu</a>,
-                              <a href="https://www.carlyuheng.com/"
-                                style="color:rgb(0, 51, 102)" target="_blank">Carl Ren</a>,                              
-                              <a href="https://scholar.google.co.uk/citations?user=MhowvPkAAAAJ&hl=en"
-                                style="color:rgb(0, 51, 102)" target="_blank">Richard Newcombe</a>. 
-                                "<i>Digital Twin Catalog: A Large-Scale Photorealistic 3D Object Digital Twin Dataset</i>", (<sup>*</sup>Authors contributed equally and are listed in alphabetical order.) Proceedings of <A
-                                href="https://cvpr.thecvf.com/Conferences/2025" style="color:rgb(0, 51, 102)"
-                                target="_blank">CVPR 2025 <b>(Highlight)</b></a>. (<a href="https://www.projectaria.com/datasets/dtc/"
-                                style="color:rgb(0, 51, 102)" target="_blank">Dataset Page</a>, <a
-                                href="https://arxiv.org/abs/2504.08541" style="color:rgb(0, 51, 102)"
-                                target="_blank">Paper (arXiv)</a>).                    
-                            </p>
-                          </td>
-                        </tr>
-
-                        <tr>
-                          <td>
-                            <img alt="CVPR 2025 LIRM" border="0" height="90"
-                                src="Images/LIRM_CVPR2025.png"
-                                style="float:left;margin-top:1em;margin-right:1em;margin-bottom:0.3em;margin-left:1em"
-                                width="179" />                                                          
-                          </td>
-                          <td>
-                            <p
-                              style="line-height:1.5;padding-top:0.25em;padding-right:1em;padding-bottom:0.25em;padding-left:1em">
-                              <a href="https://sites.google.com/a/eng.ucsd.edu/zhengqinli"
-                                style="color:rgb(0, 51, 102)" target="_blank">Zhengqin Li</a>,
-                                <a href="https://wdilin.github.io/"
-                                style="color:rgb(0, 51, 102)" target="_blank">Dilin Wang</a>,
-                              <a href="https://www.linkedin.com/in/ka-chen-ab116a31/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Ka Chen</a>,
-                              <a href="https://lvzhaoyang.github.io/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Zhaoyang Lv</a>,
-                              <a href="https://www.monkeyoverflow.com/about"
-                                style="color:rgb(0, 51, 102)" target="_blank">Thu Nguyen-Phuoc</a>,
-                              <a href="https://www.linkedin.com/in/milimlee/"
-                                style="color:rgb(0, 51, 102)" target="_blank">Milim Lee</a>,
-                              <a href="https://jbhuang0604.github.io" style="color:rgb(0, 51, 102)"
-                                target="_blank">Jia-Bin Huang</a>,
-                              <a href="https://leixiao-ubc.github.io"
-                                style="color:rgb(0, 51, 102)" target="_blank">Lei Xiao</a>,
-                              <a href="https://mike323zyf.github.io/"
-                                style="color:rgb(0, 51, 102)" target="_blank">Yufeng Zhu</a>,
-                                <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=xWD7ZRkAAAAJ&sortby=pubdate"
-                                style="color:rgb(0, 51, 102)" target="_blank">Carl Marshall</a>,
-                              <a href="https://www.carlyuheng.com/"
-                                style="color:rgb(0, 51, 102)" target="_blank">Carl Ren</a>,                              
-                              <a href="https://scholar.google.co.uk/citations?user=MhowvPkAAAAJ&hl=en"
-                                style="color:rgb(0, 51, 102)" target="_blank">Richard Newcombe</a>,
-                              <b>Zhao Dong</b>. "<i>Large Inverse Rendering Model for Progressive Reconstruction of Shape, Materials and View-dependent Radiance Fields</i>", Proceedings of <A
-                                href="https://cvpr.thecvf.com/Conferences/2025" style="color:rgb(0, 51, 102)"
-                                target="_blank">CVPR 2025</a>. (<a href="https://lzqsd.github.io/LIRM.github.io/"
-                                style="color:rgb(0, 51, 102)" target="_blank">Project Page</a>, <a
-                                href="https://arxiv.org/abs/2504.20026" style="color:rgb(0, 51, 102)"
-                                target="_blank">Paper (arXiv)</a>).                    
-                            </p>
-                          </td>
-                        </tr>
-
-                        <tr>
-                          <td>
-                            <img alt="CVPR 2025 IRIS" border="0" height="100"
-                                src="Images/Iris_CVPR2025.jpg"
-                                style="float:left;margin-top:1em;margin-right:1em;margin-bottom:0.3em;margin-left:1em"
-                                width="179" />                                                          
-                          </td>
-                          <td>
-                            <p
-                              style="line-height:1.5;padding-top:0.25em;padding-right:1em;padding-bottom:0.25em;padding-left:1em">
-                              <a href="https://zhihao-lin.github.io/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Zhi-Hao Lin</a>,
-                                <a href="https://jbhuang0604.github.io" style="color:rgb(0, 51, 102)"
-                                target="_blank">Jia-Bin Huang</a>,
-                              <a href="https://sites.google.com/a/eng.ucsd.edu/zhengqinli"
-                                style="color:rgb(0, 51, 102)" target="_blank">Zhengqin Li</a>,
-                                <b>Zhao
-                                  Dong</b>,
-                              <a href="https://richardt.name/"
-                                style="color:rgb(0, 51, 102)" target="_blank">Christian Richardt</a>,
-                                <a href="https://scholar.google.com/citations?user=jGQeuBUAAAAJ"
-                                style="color:rgb(0, 51, 102)" target="_blank">Tuotuo Li</a>,
-                                <a href="https://zollhoefer.com/"
-                                style="color:rgb(0, 51, 102)" target="_blank">Michael Zollhöfer</a>,
-                                <a href="https://johanneskopf.de/"
-                                style="color:rgb(0, 51, 102)" target="_blank">Johannes Kopf</a>,
-                                <a href="https://shenlong.web.illinois.edu/"
-                                style="color:rgb(0, 51, 102)" target="_blank">Shenlong Wang</a>,
-                                <a href="https://changilkim.com"
-                                style="color:rgb(0, 51, 102)" target="_blank">Changil Kim</a>. 
-                                "<i>IRIS: Inverse Rendering of Indoor Scenes from Low Dynamic Range Images</i>",  Proceedings of <A
-                                href="https://cvpr.thecvf.com/Conferences/2025" style="color:rgb(0, 51, 102)"
-                                target="_blank">CVPR 2025</a>. (<a href="https://irisldr.github.io/"
-                                style="color:rgb(0, 51, 102)" target="_blank">Project Page</a>, <a
-                                href="https://arxiv.org/abs/2401.12977" style="color:rgb(0, 51, 102)"
-                                target="_blank">Paper</a>).                    
-                            </p>
-                          </td>
-                        </tr>
-
-                        <tr>
-                          <td>
-                            <img alt="CVPR 2024 Texture Dreamer" border="0" height="90"
-                                src="Images/Texturedreamer_CVPR24.jpg"
-                                style="float:left;margin-top:1em;margin-right:1em;margin-bottom:0.3em;margin-left:1em"
-                                width="179" />                                                          
-                          </td>
-                          <td>
-                            <p
-                              style="line-height:1.5;padding-top:0.25em;padding-right:1em;padding-bottom:0.25em;padding-left:1em">
-                              <a href="https://yuyingyeh.github.io/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Yu-ying Yeh</a>, 
-                              <a href="https://jbhuang0604.github.io" style="color:rgb(0, 51, 102)"
-                                target="_blank">Jia-Bin Huang</a>, 
-                              <a href="https://changilkim.com"
-                                style="color:rgb(0, 51, 102)" target="_blank">Changil Kim</a>,
-                              <a href="https://leixiao-ubc.github.io"
-                                style="color:rgb(0, 51, 102)" target="_blank">Lei Xiao</a>,
-                                <a href="https://www.monkeyoverflow.com/about"
-                                style="color:rgb(0, 51, 102)" target="_blank">Thu Nguyen-Phuoc</a>,
-                                <a href="https://nkhan2.github.io"
-                                style="color:rgb(0, 51, 102)" target="_blank">Numair Khan</a>,
-                                <a href="https://holmes969.github.io"
-                                style="color:rgb(0, 51, 102)" target="_blank">Cheng Zhang</a>,
-                                <a href="https://cseweb.ucsd.edu/~mkchandraker/"
-                                style="color:rgb(0, 51, 102)" target="_blank">Manmohan Chandraker</a>,
-                                <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=xWD7ZRkAAAAJ&sortby=pubdate"
-                                style="color:rgb(0, 51, 102)" target="_blank">Carl Marshall</a>,
-                                <b>Zhao
-                                Dong</b>, <a href="https://sites.google.com/a/eng.ucsd.edu/zhengqinli"
-                                style="color:rgb(0, 51, 102)" target="_blank">Zhengqin Li</a>. "<i>TextureDreamer: Image-guided Texture Synthesis through Geometry-aware Diffusion</i>", Proceedings of <A
-                                href="https://cvpr.thecvf.com/Conferences/2024" style="color:rgb(0, 51, 102)"
-                                target="_blank">CVPR 2024</a>). (<a href="https://texturedreamer.github.io/"
-                                style="color:rgb(0, 51, 102)" target="_blank">Project Page</a>, <a
-                                href="https://openaccess.thecvf.com/content/CVPR2024/papers/Yeh_TextureDreamer_Image-Guided_Texture_Synthesis_Through_Geometry-Aware_Diffusion_CVPR_2024_paper.pdf" style="color:rgb(0, 51, 102)"
-                                target="_blank">Paper</a>).                    
-                            </p>
-                          </td>
-                        </tr>
-
-                        <tr>
-                          <td>
-                            <img alt="CVPR 2024 NeRF Analogy" border="0" height="80"
-                                src="Images/NeRF_Analogy.png"
-                                style="float:left;margin-top:1em;margin-right:1em;margin-bottom:0.3em;margin-left:1em"
-                                width="179" />                                                          
-                          </td>
-                          <td>
-                            <p
-                              style="line-height:1.5;padding-top:0.25em;padding-right:1em;padding-bottom:0.25em;padding-left:1em">
-                              <a href="https://mfischer-ucl.github.io/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Michael Fischer</a>,
-                              <a href="https://sites.google.com/a/eng.ucsd.edu/zhengqinli"
-                                style="color:rgb(0, 51, 102)" target="_blank">Zhengqin Li</a>,
-                              <a href="https://www.monkeyoverflow.com/about"
-                                style="color:rgb(0, 51, 102)" target="_blank">Thu Nguyen-Phuoc</a>,
-                                <a href="https://aljazbozic.github.io/"
-                                style="color:rgb(0, 51, 102)" target="_blank">Aljaž Božič</a>,
-                                <b>Zhao
-                                  Dong</b>,
-                                <a href="https://www.homepages.ucl.ac.uk/~ucactri/"
-                                style="color:rgb(0, 51, 102)" target="_blank">Tobias Ritschel</a>,
-                                <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=xWD7ZRkAAAAJ&sortby=pubdate"
-                                style="color:rgb(0, 51, 102)" target="_blank">Carl Marshall</a>. 
-                                "<i>NeRF Analogies: Example-Based Visual Attribute Transfer for NeRFs</i>", Proceedings of <A
-                                href="https://cvpr.thecvf.com/Conferences/2024" style="color:rgb(0, 51, 102)"
-                                target="_blank">CVPR 2024</a>). (<a href="https://mfischer-ucl.github.io/nerf_analogies/"
-                                style="color:rgb(0, 51, 102)" target="_blank">Project Page</a>, <a
-                                href="https://openaccess.thecvf.com/content/CVPR2024/papers/Fischer_NeRF_Analogies_Example-Based_Visual_Attribute_Transfer_for_NeRFs_CVPR_2024_paper.pdf" style="color:rgb(0, 51, 102)"
-                                target="_blank">Paper</a>).                    
-                            </p>
-                          </td>
-                        </tr>                        
-
-                        <tr>
-                          <td>
-                            <img alt="EGSR 2024 Uncertainty" border="0" height="85"
-                                src="Images/brdf_estimation.jpg"
-                                style="float:left;margin-top:1em;margin-right:1em;margin-bottom:0.3em;margin-left:1em"
-                                width="179" />                                                          
-                          </td>
-                          <td>
-                            <p
-                              style="line-height:1.5;padding-top:0.25em;padding-right:1em;padding-bottom:0.25em;padding-left:1em">
-                              <a href="https://scholar.google.com/citations?user=0lGfaCIAAAAJ&hl=en" style="color:rgb(0, 51, 102)"
-                                target="_blank">Zhiqian Zhou</a>,
-                                <a href="https://holmes969.github.io"
-                                style="color:rgb(0, 51, 102)" target="_blank">Cheng Zhang</a>,
-                                <b>Zhao
-                                  Dong</b>,
-                                  <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=xWD7ZRkAAAAJ&sortby=pubdate"
-                                  style="color:rgb(0, 51, 102)" target="_blank">Carl Marshall</a>,
-                                  <a href="https://shuangz.com/"
-                                  style="color:rgb(0, 51, 102)" target="_blank">Shuang Zhao</a>.                                   
-                                "<i>Estimating Uncertainty in Appearance Acquisition</i>", <a
-                                href="https://www.egsr2024.uk/" style="color:rgb(0, 51, 102)"
-                                target="_blank"> EGSR 2024 </a>. (<a
-                                href="https://drive.google.com/file/d/16Nwjs3QrFnwLh8f47CwoEu0YKKIwFGpT/view?usp=sharing" style="color:rgb(0, 51, 102)"
-                                target="_blank">Paper</a>).                    
-                            </p>
-                          </td>
-                        </tr>
-
-                        <tr>
-                          <td><img alt="SIGAsia2023 Diff. Indirection" border="0" height="90"
-                              src="Images/Diff-Indirection-SIGAsia2023.jpg"
-                              style="float:left;margin-top:1em;margin-right:1em;margin-bottom:0.3em;margin-left:1em"
-                              width="179" /></td>
-                          <td>
-                            <p
-                              style="line-height:1.5;padding-top:0.25em;padding-right:1em;padding-bottom:0.25em;padding-left:1em">
-                              <a href="https://sayan1an.github.io/menu2.html" style="color:rgb(0, 51, 102)"
-                                target="_blank">Sayantan Datta</a>, <a
-                                href="https://www.linkedin.com/in/carl-s-marshall" style="color:rgb(0, 51, 102)"
-                                target="_blank">Carl Marshall</a>, <a href="https://www.cim.mcgill.ca/~derek/"
-                                style="color:rgb(0, 51, 102)" target="_blank">Derek Nowrouzezahrai</a>, <b>Zhao
-                                Dong</b>, <a href="https://sites.google.com/a/eng.ucsd.edu/zhengqinli"
-                                style="color:rgb(0, 51, 102)" target="_blank">Zhengqin Li</a>. "<i>Efficient Graphics
-                                Representation with Differentiable Indirection</i>", Proceedings of <A
-                                href="https://asia.siggraph.org/2023/" style="color:rgb(0, 51, 102)"
-                                target="_blank">SIGGRAPH Asia 2023</a>). (<a href="https://sayan1an.github.io/din.html"
-                                style="color:rgb(0, 51, 102)" target="_blank">Project Page</a>, <a
-                                href="https://drive.google.com/file/d/1z63OFV0OhcRIZnCX3psNlHrFEL5iCJiT/view?usp=sharing" style="color:rgb(0, 51, 102)"
-                                target="_blank">Paper</a>).
-                            </p>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td><img alt="TOG2023 ML Lighting" border="0" height="90" src="Images/TOG-ML-Lighting.jpg"
-                              style="float:left;margin-top:1em;margin-right:1em;margin-bottom:0.3em;margin-left:1em"
-                              width="179" /></td>
-                          <td>
-                            <p
-                              style="line-height:1.5;padding-top:0.25em;padding-right:1em;padding-bottom:0.25em;padding-left:1em">
-                              <a href="https://sites.google.com/a/eng.ucsd.edu/zhengqinli" style="color:rgb(0, 51, 102)"
-                                target="_blank">Zhengqin Li</a>, Li Yu, <a
-                                href="https://scholar.google.com/citations?user=_owXoG4AAAAJ&hl=en"
-                                style="color:rgb(0, 51, 102)" target="_blank">Mikhail Okunev</a>, <a
-                                href="https://cseweb.ucsd.edu/~mkchandraker/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Manmohan Chandraker</a>, <b>Zhao Dong</b>. "<i>Spatiotemporally
-                                Consistent HDR Indoor Lighting Estimation</i>", <a href="http://tog.acm.org/"
-                                style="color:rgb(0, 51, 102)" target="_blank">ACM Transactions on Graphics (TOG)</a>,
-                              2023. (Presented at <A href="https://asia.siggraph.org/2023/"
-                                style="color:rgb(0, 51, 102)" target="_blank">SIGGRAPH Asia 2023</a>). (<a
-                                href="https://drive.google.com/file/d/1uYFwJH0bZVxXPFnh5cYtZpfomVH_Rcco/view?usp=sharing" style="color:rgb(0, 51, 102)"
-                                target="_blank">Paper</a>).
-                            </p>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td><img alt="ICCV2023 Neural-PBIR" border="0" height="90"
-                              src="Images/Neural-PBIR-ICCV2023.jpg"
-                              style="float:left;margin-top:1em;margin-right:1em;margin-bottom:0.3em;margin-left:1em"
-                              width="179" /></td>
-                          <td>
-                            <p
-                              style="line-height:1.5;padding-top:0.25em;padding-right:1em;padding-bottom:0.25em;padding-left:1em">
-                              <a href="https://sunset1995.github.io/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Cheng Sun</a>, <a href="https://guangyancai.me/"
-                                style="color:rgb(0, 51, 102)" target="_blank">Guangyan Cai</a>, <a
-                                href="https://sites.google.com/a/eng.ucsd.edu/zhengqinli" style="color:rgb(0, 51, 102)"
-                                target="_blank">Zhengqin Li</a>, <a href="https://yank.ai/"
-                                style="color:rgb(0, 51, 102)" target="_blank">Kai Yan</a>, <a
-                                href="https://holmes969.github.io/" style="color:rgb(0, 51, 102)" target="_blank">Cheng
-                                Zhang</a>, <a href="https://www.linkedin.com/in/carl-s-marshall"
-                                style="color:rgb(0, 51, 102)" target="_blank">Carl Marshall</a>, <a
-                                href="https://jbhuang0604.github.io/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Jia-Bin Huang</a>, <a href="https://shuangz.com/"
-                                style="color:rgb(0, 51, 102)" target="_blank">Shuang Zhao</a>, <b>Zhao Dong</b>.
-                              "<i>Neural-PBIR Reconstruction of Shape, Material, and Illumination</i>", <A
-                                href="https://iccv2023.thecvf.com/" style="color:rgb(0, 51, 102)" target="_blank">ICCV
-                                2023</a>. (<a href="https://neural-pbir.github.io/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Project Page</a>, <a href="https://drive.google.com/file/d/1nXopwTCfVXkscHpuMCP0sZ6Ju4O8Djja/view?usp=sharing"
-                                style="color:rgb(0, 51, 102)" target="_blank">Paper</a>).
-                            </p>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td><img alt="HPG2023 PSAO" border="0" height="90" src="Images/PSAO-hpg2023.jpg"
-                              style="float:left;margin-top:1em;margin-right:1em;margin-bottom:0.3em;margin-left:1em"
-                              width="179" /></td>
-                          <td>
-                            <p
-                              style="line-height:1.5;padding-top:0.25em;padding-right:1em;padding-bottom:0.25em;padding-left:1em">
-                              <a href="https://thomasneff.github.io/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Thomas Neff</a>, <a
-                                href="https://scholar.google.com/citations?user=z67HnEwAAAAJ&hl=en"
-                                style="color:rgb(0, 51, 102)" target="_blank">Brian Budge</a>, <b>Zhao Dong</b>, <a
-                                href="https://www.tugraz.at/institute/icg/research/team-schmalstieg/"
-                                style="color:rgb(0, 51, 102)" target="_blank">Dieter Schmalstieg</a>, <a
-                                href="https://www.markussteinberger.net/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Markus Steinberger</a>. "<i>PSAO: Point-Based Split Rendering for
-                                Ambient Occlusion
-                              </i>", <A href="https://www.highperformancegraphics.org/2023/index.html"
-                                style="color:rgb(0, 51, 102)" target="_blank">High-Performance Graphics (HPG) 2023</a>.
-                              (<a href="https://diglib.eg.org/handle/10.2312/hpg20231131" style="color:rgb(0, 51, 102)"
-                                target="_blank">Paper & Video</a>, <a
-                                href="https://www.youtube.com/watch?app=desktop&v=uiSrBJ8WzNw"
-                                style="color:rgb(0, 51, 102)" target="_blank">Talk</a>).
-                            </p>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td><img alt="EGSR2023 PBDR volume" border="0" height="90"
-                              src="Images/psdr-volume-egsr23_teaser.jpg"
-                              style="float:left;margin-top:1em;margin-right:1em;margin-bottom:0.3em;margin-left:1em"
-                              width="179" /></td>
-                          <td>
-                            <p
-                              style="line-height:1.5;padding-top:0.25em;padding-right:1em;padding-bottom:0.25em;padding-left:1em">
-                              <a href="https://zihan.me/" style="color:rgb(0, 51, 102)" target="_blank">Zihan Yu</a>, <a
-                                href="https://holmes969.github.io/" style="color:rgb(0, 51, 102)" target="_blank">Cheng
-                                Zhang</a>, Olivier Maury, Christophe Hery, <b>Zhao Dong</b>, <a
-                                href="https://shuangz.com/" style="color:rgb(0, 51, 102)" target="_blank">Shuang
-                                Zhao</a>. "<i>Efficient Path-Space Differentiable Volume Rendering With Respect To
-                                Shapes
-                              </i>", <A href="https://conferences.eg.org/egsr2023/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Eurographics Symposium on Rendering (EGSR) 2023</a>. (<a
-                                href="https://shuangz.com/projects/psdr-vol2-egsr23/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Project Page</a>, <a href="https://drive.google.com/file/d/1J9AouVw2kmJ0TEpYy-su2X6-_fKj2YU3/view?usp=sharing"
-                                style="color:rgb(0, 51, 102)" target="_blank">PDF(Preprint)</a>).
-                            </p>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td><img alt="SIGASIA2022 PBDR Pixel" border="0" height="90"
-                              src="Images/psdr-pixel-sga22_teaser.jpg"
-                              style="float:left;margin-top:1em;margin-right:1em;margin-bottom:0.3em;margin-left:1em"
-                              width="179" /></td>
-                          <td>
-                            <p
-                              style="line-height:1.5;padding-top:0.25em;padding-right:1em;padding-bottom:0.25em;padding-left:1em">
-                              <a href="https://zihan.me/" style="color:rgb(0, 51, 102)" target="_blank">Zihan Yu</a>, <a
-                                href="https://holmes969.github.io/" style="color:rgb(0, 51, 102)" target="_blank">Cheng
-                                Zhang</a>, <a href="https://www.cim.mcgill.ca/~derek/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Derek Nowrouzezahrai</a>, <b>Zhao Dong</b>, <a
-                                href="https://shuangz.com/" style="color:rgb(0, 51, 102)" target="_blank">Shuang
-                                Zhao</a>. "<i>Efficient Differentiation of Pixel Reconstruction Filters for Path-Space
-                                Differentiable Rendering</i>", <a href="http://tog.acm.org/"
-                                style="color:rgb(0, 51, 102)" target="_blank">ACM Transactions on Graphics (TOG)</a>,
-                              41(6), 2022. (Proceedings of <A href="https://sa2022.siggraph.org/"
-                                style="color:rgb(0, 51, 102)" target="_blank">SIGGRAPH Asia 2022</a>). (<a
-                                href="https://shuangz.com/projects2/psdr-pixel-sa22/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Project Page</a>, <a href="https://drive.google.com/file/d/1XtvmiXsYH8rktc5H-ltqffhL6FlJZdei/view?usp=drive_link"
-                                style="color:rgb(0, 51, 102)" target="_blank">PDF(Preprint)</a>).
-                            </p>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td><img alt="SIGASIA2022 WOL" border="0" height="90" src="Images/Wol22_siga22_teaser1.jpg"
-                              style="float:left;margin-top:1em;margin-right:1em;margin-bottom:0.3em;margin-left:1em"
-                              width="179" /></td>
-                          <td>
-                            <p
-                              style="line-height:1.5;padding-top:0.25em;padding-right:1em;padding-bottom:0.25em;padding-left:1em">
-                              <a href="https://people.mpi-inf.mpg.de/~kwolski/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Krzysztof Wolski</a>, <a href="https://www.auract.net/"
-                                style="color:rgb(0, 51, 102)" target="_blank">Laura Trutoiu</a>, <b>Zhao Dong</b>,
-                              Zhengyang Shen, Kevin MacKenzie, <a href="https://achapiro.github.io/"
-                                style="color:rgb(0, 51, 102)" target="_blank">Alex Chapiro</a>. "<i>Geo-metric: A
-                                Perceptual Dataset of Distortions on Faces</i>", <a href="http://tog.acm.org/"
-                                style="color:rgb(0, 51, 102)" target="_blank">ACM Transactions on Graphics (TOG)</a>,
-                              41(6), 2022. (Proceedings of <A href="https://sa2022.siggraph.org/"
-                                style="color:rgb(0, 51, 102)" target="_blank">SIGGRAPH Asia 2022</a>). (<a
-                                href="https://drive.google.com/file/d/1nM_cN6geIYtZ6C04XlXnknj-Wifm8yRA/view?usp=drive_link" style="color:rgb(0, 51, 102)"
-                                target="_blank">PDF(Preprint)</a>, <a
-                                href="https://github.com/facebookresearch/Geo-metric" style="color:rgb(0, 51, 102)"
-                                target="_blank">Code/Data</a>).
-                            </p>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td><img alt="SIG2022 PBDR Envlight" border="0" height="90"
-                              src="Images/psdr-aq-sg22_teaser.jpg"
-                              style="float:left;margin-top:1em;margin-right:1em;margin-bottom:0.3em;margin-left:1em"
-                              width="179" /></td>
-                          <td>
-                            <p
-                              style="line-height:1.5;padding-top:0.25em;padding-right:1em;padding-bottom:0.25em;padding-left:1em">
-                              <a href="http://www.kyan.ai/" style="color:rgb(0, 51, 102)" target="_blank">Kai Yan</a>,
-                              <a href="https://christophlassner.de/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Christoph Lassner</a>, <a
-                                href="https://scholar.google.com/citations?user=z67HnEwAAAAJ&hl=en"
-                                style="color:rgb(0, 51, 102)" target="_blank">Brian Budge</a>, <b>Zhao Dong</b>, <a
-                                href="https://shuangz.com/" style="color:rgb(0, 51, 102)" target="_blank">Shuang
-                                Zhao</a>. "<i>Efficient Estimation of Boundary Integrals for Path-Space Differentiable
-                                Rendering</i>", <a href="http://tog.acm.org/" style="color:rgb(0, 51, 102)"
-                                target="_blank">ACM Transactions on Graphics (TOG)</a>, 2022. (Proceedings of <A
-                                href="https://s2022.siggraph.org/" style="color:rgb(0, 51, 102)"
-                                target="_blank">SIGGRAPH 2022</a>). (<a
-                                href="https://shuangz.com/projects/psdr-aq-sg22/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Project Page</a>, <a href="https://drive.google.com/file/d/1VYU0GopJEZl4LUtDoqyXCLk8iBFipjJk/view?usp=drive_link"
-                                style="color:rgb(0, 51, 102)" target="_blank">PDF(Preprint)</a>, <a
-                                href="https://drive.google.com/file/d/124J0W7mI00iScIxnLRJZlo9aoDtLisP7/view?usp=drive_link" style="color:rgb(0, 51, 102)"
-                                target="_blank">Supplemental Material</a>).
-                            </p>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td><img alt="SIG2022 Neural SM" border="0" height="90" src="Images/neural-sm-sg22.jpg"
-                              style="float:left;margin-top:1em;margin-right:1em;margin-bottom:0.3em;margin-left:1em"
-                              width="179" /></td>
-                          <td>
-                            <p
-                              style="line-height:1.5;padding-top:0.25em;padding-right:1em;padding-bottom:0.25em;padding-left:1em">
-                              <a href="https://sayan1an.github.io/index.html" style="color:rgb(0, 51, 102)"
-                                target="_blank">Sayantan Datta</a>, <a href="https://www.cim.mcgill.ca/~derek/"
-                                style="color:rgb(0, 51, 102)" target="_blank">Derek Nowrouzezahrai</a>, <a
-                                href="https://scholar.google.ca/citations?user=STYtYHwAAAAJ&hl=en&oi=ao"
-                                style="color:rgb(0, 51, 102)" target="_blank">Christoph Schied</a>, <b>Zhao Dong</b>.
-                              "<i>Neural Shadow Mapping</i>", Proceedings of <A href="https://s2022.siggraph.org/"
-                                style="color:rgb(0, 51, 102)" target="_blank">SIGGRAPH 2022</a>. (<a
-                                href="https://sayan1an.github.io/neuralShadowMapping.html" style="color:rgb(0, 51, 102)"
-                                target="_blank">Project Page</a>, <a href="download/neuralShadowMapping.pdf"
-                                style="color:rgb(0, 51, 102)" target="_blank">PDF(Preprint)</a>, <a
-                                href="download/neuralShadowMappingSupplemental.pdf" style="color:rgb(0, 51, 102)"
-                                target="_blank">Supplemental Material</a>, <a
-                                href="https://drive.google.com/file/d/1xfWI5ezigp2Ztvd7lSpLOt4O8PAqSCQ3/view?usp=sharing"
-                                style="color:rgb(0, 51, 102)" target="_blank">Video</a>).
-                            </p>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td><img alt="EGSR2022 Mesh SDF" border="0" height="90" src="Images/psdr-meshsdf-egsr2022.jpg"
-                              style="float:left;margin-top:1em;margin-right:1em;margin-bottom:0.3em;margin-left:1em"
-                              width="179" /></td>
-                          <td>
-                            <p
-                              style="line-height:1.5;padding-top:0.25em;padding-right:1em;padding-bottom:0.25em;padding-left:1em">
-                              <a href="https://guangyancai.github.io/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Guangyan Cai</a>, <a href="http://www.kyan.ai/"
-                                style="color:rgb(0, 51, 102)" target="_blank">Kai Yan</a>, <b>Zhao Dong</b>, <a
-                                href="https://www.cs.cmu.edu/~igkioule/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Ioannis Gkioulekas</a>, <a href="https://shuangz.com/"
-                                style="color:rgb(0, 51, 102)" target="_blank">Shuang Zhao</a>. "<i>Physics-Based Inverse
-                                Rendering using Combined Implicit and Explicit Geometries</i>", <A
-                                href="https://egsr.eu/2022/" style="color:rgb(0, 51, 102)" target="_blank">Eurographics
-                                Symposium on Rendering (EGSR) 2022</a>. (<a
-                                href="https://shuangz.com/projects/psdr-meshsdf-egsr22/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Project Page</a>, <a href="https://drive.google.com/file/d/1rj6g3oAp3gTVX3zOL1jaOQ4QTX4SVxDd/view?usp=drive_link"
-                                style="color:rgb(0, 51, 102)" target="_blank">PDF(Preprint)</a>, <a
-                                href="https://drive.google.com/file/d/1OkuO63s1_OW_i2KXmXzlorf2xILUo0PH/view?usp=drive_link" style="color:rgb(0, 51, 102)"
-                                target="_blank">Supplemental Material</a>.
-                            </p>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td><img alt="SIG2021 PBDR Sampling" border="0" height="90" src="Images/teaser_sig2021.png"
-                              style="float:left;margin-top:1em;margin-right:1em;margin-bottom:0.3em;margin-left:1em"
-                              width="179" /></td>
-                          <td>
-                            <p
-                              style="line-height:1.5;padding-top:0.25em;padding-right:1em;padding-bottom:0.25em;padding-left:1em">
-                              <a href="https://www.ics.uci.edu/~chengz20/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Cheng Zhang</a>, <b>Zhao Dong</b>, <a
-                                href="https://cs.lth.se/michael-doggett/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Michael Doggett</a>, <a href="https://shuangz.com/"
-                                style="color:rgb(0, 51, 102)" target="_blank">Shuang Zhao</a>. "<i>Antithetic Sampling
-                                for Monte Carlo Differentiable Rendering</i>", <a href="http://tog.acm.org/"
-                                style="color:rgb(0, 51, 102)" target="_blank">ACM Transactions on Graphics (TOG)</a>,
-                              40(4), 2021. (Proceedings of <A href="https://s2021.siggraph.org/"
-                                style="color:rgb(0, 51, 102)" target="_blank">SIGGRAPH 2021</a>). (<a
-                                href="https://shuangz.com/projects/antithetic-sg21/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Project Page</a>, <a href="https://drive.google.com/file/d/11QK1ORwyr5OLj-EYknbYNro8j0kafjfd/view?usp=drive_link"
-                                style="color:rgb(0, 51, 102)" target="_blank">PDF(Preprint)</a>, <a
-                                href="https://drive.google.com/file/d/1JZLToGIwDGSXpUsGF0Y7RyRTPsW4-DPN/view?usp=drive_link" style="color:rgb(0, 51, 102)"
-                                target="_blank">Supplemental Material</a>).
-                            </p>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td><img alt="EGSR2021 PBDR Object Scan" border="0" height="90"
-                              src="Images/pbdr_scan_egsr2021.png"
-                              style="float:left;margin-top:1em;margin-right:1em;margin-bottom:0.3em;margin-left:1em"
-                              width="179" /></td>
-                          <td>
-                            <p
-                              style="line-height:1.5;padding-top:0.25em;padding-right:1em;padding-bottom:0.25em;padding-left:1em">
-                              <a href="https://www.cs.cornell.edu/~fujun/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Fujun Luan</a>, <a href="https://shuangz.com/"
-                                style="color:rgb(0, 51, 102)" target="_blank">Shuang Zhao</a>, <a
-                                href="https://www.cs.cornell.edu/~kb/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Kavita Bala</a>, <b>Zhao Dong</b>. "<i>Unified Shape and SVBRDF Recovery
-                                using
-                                Differentiable Monte Carlo Rendering</i>", <A href="https://egsr.eu/2021/"
-                                style="color:rgb(0, 51, 102)" target="_blank">Eurographics Symposium on Rendering (EGSR)
-                                2021</a>. (<a href="https://luanfujun.github.io/InverseMeshSVBRDF/"
-                                style="color:rgb(0, 51, 102)" target="_blank">Project Page</a>, <a
-                                href="https://drive.google.com/file/d/1KOk5d2Sr6Q8oE02DsJBwxZ3rD3OCaeCy/view?usp=drive_link" style="color:rgb(0, 51, 102)"
-                                target="_blank">PDF(Preprint)</a>, <a href="https://drive.google.com/file/d/1-3GGWYtuH2m2U7CmuE3o3HAoG5Z_R_xv/view?usp=drive_link"
-                                style="color:rgb(0, 51, 102)" target="_blank">Supplemental Material</a>).
-                            </p>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td><img alt="EGSR2021 PBDR Room Recon" border="0" height="90"
-                              src="Images/pbdr_room_egsr2021.png"
-                              style="float:left;margin-top:1em;margin-right:1em;margin-bottom:0.3em;margin-left:1em"
-                              width="179" /></td>
-                          <td>
-                            <p
-                              style="line-height:1.5;padding-top:0.25em;padding-right:1em;padding-bottom:0.25em;padding-left:1em">
-                              <a href="https://rgl.epfl.ch/people/mnimierdavid" style="color:rgb(0, 51, 102)"
-                                target="_blank">Merlin Nimier-David</a>, <b>Zhao Dong</b>, <a
-                                href="https://rgl.epfl.ch/people/wjakob" style="color:rgb(0, 51, 102)"
-                                target="_blank">Wenzel Jakob</a>, <a href="http://kaplanyan.com/"
-                                style="color:rgb(0, 51, 102)" target="_blank">Anton Kaplanyan</a>. "<i>Material and
-                                lighting reconstruction for complex indoor scenes with
-                                texture-space differentiable rendering</i>", <A href="https://egsr.eu/2021/"
-                                style="color:rgb(0, 51, 102)" target="_blank">Eurographics Symposium on Rendering (EGSR)
-                                2021</a>. (<a href="https://rgl.epfl.ch/publications/NimierDavid2021Material"
-                                style="color:rgb(0, 51, 102)" target="_blank">Project Page</a>, <a
-                                href="https://drive.google.com/file/d/1mO7_-ELHFeGCjE1zsJAzBpR0gG29T0lC/view?usp=drive_link" style="color:rgb(0, 51, 102)"
-                                target="_blank">PDF(Preprint)</a>, <a href="https://drive.google.com/file/d/17BRg79fOOfey5qM-M_2-XsZZ6-9EBF0A/view?usp=drive_link"
-                                style="color:rgb(0, 51, 102)" target="_blank">Supplemental Material</a>).
-                            </p>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td><img alt="SIGAsia 2016 Wood" border="0" height="90" src="Images/Wood_SIGAsia2016.jpg"
-                              style="float:left;margin-top:1em;margin-right:1em;margin-bottom:0.3em;margin-left:1em"
-                              width="179" /></td>
-                          <td>
-                            <p
-                              style="line-height:1.5;padding-top:0.25em;padding-right:1em;padding-bottom:0.25em;padding-left:1em">
-                              <a href="http://www.cs.cornell.edu/~ajul/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Albert Julius Liu</a>, <b>Zhao Dong</b>, <a
-                                href="http://miloshasan.net/" style="color:rgb(0, 51, 102)" target="_blank">Miloš
-                                Hašan</a>, <a href="http://www.cs.cornell.edu/~srm/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Steve Marschner</a>. "<i>Simulating the structure and texture of solid
-                                wood</i>", <a href="http://tog.acm.org/" style="color:rgb(0, 51, 102)"
-                                target="_blank">ACM Transactions on Graphics (TOG)</a>, 35(6), 2016. (Proceedings of <A
-                                href="http://sa2016.siggraph.org/" style="color:rgb(0, 51, 102)"
-                                target="_blank">SIGGRAPH Asia 2016</a>). (<a href="https://drive.google.com/file/d/1cEO5GSFa9IfGwHNLNckj2jX0424MQDgF/view?usp=drive_link"
-                                style="color:rgb(0, 51, 102)" target="_blank">PDF(Preprint)</a>, <a
-                                href="https://drive.google.com/file/d/1ZujwBrvmgSRrDyJtPmfnNGMB3v52k3a0/view?usp=drive_link" style="color:rgb(0, 51, 102)"
-                                target="_blank">Video</a>(<a href="https://www.youtube.com/watch?v=fQxl3M4qZK8"
-                                style="color:rgb(0, 51, 102)" target="_blank">Youtube</a>), <a
-                                href="https://drive.google.com/file/d/1MOmcWtltXxO85g0wF1jkh0LyZwLw-c6_/view?usp=drive_link" style="color:rgb(0, 51, 102)"
-                                target="_blank">BibTex</a>).(This 3D procedural wood BRDF has been fully integrated into
-                              the <a
-                                href="https://knowledge.autodesk.com/support/3ds-max/getting-started/caas/CloudHelp/cloudhelp/2019/ENU/3DSMax-Lighting-Shading/files/GUID-08A43355-BF9E-4F95-A24D-1549F9476F57-htm.html"
-                                style="color:rgb(0, 51, 102)" target="_blank">Autodesk 3DS Max</a> and <a
-                                href="http://www.autodesk.com/products/fusion-360/overview"
-                                style="color:rgb(0, 51, 102)" target="_blank">Autodesk Fusion 360</a>, and you can <a
-                                href="http://www.autodesk.com/products/fusion-360/try-buy" style="color:rgb(0, 51, 102)"
-                                target="_blank">try it</a> for free).
-                            </p>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td><img alt="TOG 2015 BRDF" border="0" height="89" src="Images/BRDFMetal_Reps.png"
-                              style="float:left;margin-top:1em;margin-right:1em;margin-bottom:0.3em;margin-left:1em"
-                              width="179" /></td>
-                          <td>
-                            <p
-                              style="line-height:1.5;padding-top:0.25em;padding-right:1em;padding-bottom:0.25em;padding-left:1em">
-                              <b>Zhao Dong<sup>*</sup></b>, <a href="http://www.graphics.cornell.edu/~bjw/"
-                                style="color:rgb(0, 51, 102)" target="_blank">Bruce Walter</a><sup>*</sup>, <a
-                                href="http://www.cs.cornell.edu/~srm/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Steve Marschner</a>, <a
-                                href="http://www.graphics.cornell.edu/people/director.html"
-                                style="color:rgb(0, 51, 102)" target="_blank">Donald P. Greenberg</a>. "<i>Predicting
-                                Appearance from Measured Microgeometry of Metal
-                                Surfaces</i>", <a href="http://dl.acm.org/citation.cfm?id=2815618"
-                                style="color:rgb(0, 51, 102)" target="_blank">ACM Transactions on Graphics (TOG)</a>,
-                              35(1), 9:1 - 9:13, 2015. (<sup>*</sup>Joint first authors.) (To be presented at <A
-                                href="http://s2016.siggraph.org/" style="color:rgb(0, 51, 102)" target="_blank">SIGGRAPH
-                                2016</a>). (<a href="https://drive.google.com/file/d/15e-WjhXbkH2irDx2yZMwruceN2bJaVvL/view?usp=drive_link"
-                                style="color:rgb(0, 51, 102)" target="_blank">PDF(Preprint)</a>, <a
-                                href="https://drive.google.com/file/d/1BQHNbTHRJd5ynJJJn-0QrbBRVn3EsFP5/view?usp=drive_link" style="color:rgb(0, 51, 102)"
-                                target="_blank">Supplemental(Kirchhoff)</a>, <a
-                                href="https://drive.google.com/file/d/169hWXQAnjvHTaLX7fnQu3KAwmz2DeTNw/view?usp=drive_link" style="color:rgb(0, 51, 102)"
-                                target="_blank">Supplemental(EllipsoidNDF)</a>, <a
-                                href="https://drive.google.com/file/d/1wVktMx7dOVKuUA2LKCzEOY7IE5sKrboA/view?usp=drive_link" style="color:rgb(0, 51, 102)"
-                                target="_blank">Video</a>, <a href="https://drive.google.com/file/d/17jKRMZlFBTU_LGBrXJdSCSk1OC3A51HX/view?usp=drive_link"
-                                style="color:rgb(0, 51, 102)" target="_blank">BibTex</a>).
-                            </p>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td><img alt="TOG 2015 Luminaire" border="0" height="88" src="Images/Luminaire_Reps.png"
-                              style="float:left;margin-top:1em;margin-right:1em;margin-bottom:0.3em;margin-left:1em"
-                              width="179" /></td>
-                          <td>
-                            <p
-                              style="line-height:1.5;padding-top:0.25em;padding-right:1em;padding-bottom:0.25em;padding-left:1em">
-                              <a href="http://www.cs.cornell.edu/~eva5/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Edgar Velázquez-Armendáriz</a>, <b>Zhao Dong</b>, <a
-                                href="http://www.graphics.cornell.edu/~bjw/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Bruce Walter</a>, <a
-                                href="http://www.graphics.cornell.edu/people/director.html"
-                                style="color:rgb(0, 51, 102)" target="_blank">Donald P. Greenberg</a>. "<i>Complex
-                                Luminaires: Illumination and Appearance Rendering</i>", <a
-                                href="http://dl.acm.org/citation.cfm?id=2714571" style="color:rgb(0, 51, 102)"
-                                target="_blank">ACM Transactions on Graphics (TOG)</a>, 34(3), 26:1 - 26:15, 2015. (to
-                              be presented at <A href="http://s2015.siggraph.org/" style="color:rgb(0, 51, 102)"
-                                target="_blank">SIGGRAPH 2015</a>). (Project Page, <a
-                                href="https://drive.google.com/file/d/1bnpILhhh0Lc8jdQueU0ch7v1KjpLVOXn/view?usp=drive_link" style="color:rgb(0, 51, 102)"
-                                target="_blank">PDF(preprint)</a>, Slides, <a href="https://drive.google.com/file/d/1ZGFtyxu6R80FNr98hSSXxQZ9_1hYBeoJ/view?usp=drive_link"
-                                style="color:rgb(0, 51, 102)" target="_blank">BibTex</a>).
-                            </p>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td><img alt="TOG 2014" border="0" height="111" src="Images/Reflection_TOG2014.png"
-                              style="float:left;margin-top:1em;margin-right:1em;margin-bottom:0.3em;margin-left:1em"
-                              width="179" /></td>
-                          <td>
-                            <p
-                              style="line-height:1.5;padding-top:0.25em;padding-right:1em;padding-bottom:0.25em;padding-left:1em">
-                              <a href="http://cg.cs.tsinghua.edu.cn/people/~kun/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Kun Xu</a>, Yan-Pei Cao, <a
-                                href="http://cg.cs.tsinghua.edu.cn/people/~liqian/home/index.html"
-                                style="color:rgb(0, 51, 102)" target="_blank">Li-Qian Ma</a>, <b>Zhao Dong</b>, <a
-                                href="http://people.cs.umass.edu/~ruiwang/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Rui Wang</a>, <a href="http://cg.cs.tsinghua.edu.cn/prof_hu.htm"
-                                style="color:rgb(0, 51, 102)" target="_blank">Shi-Min Hu</a>. "<i>A Practical Algorithm
-                                for Rendering Interreflections with All-frequency BRDFs</i>", <a
-                                href="http://dl.acm.org/citation.cfm?id=2533687" style="color:rgb(0, 51, 102)"
-                                target="_blank">ACM Transactions on Graphics (TOG)</a>, 33(1), 10:1 - 10:16, 2014. (to
-                              be presented at <A href="http://s2014.siggraph.org/" style="color:rgb(0, 51, 102)"
-                                target="_blank">SIGGRAPH 2014</a>). (<a
-                                href="http://cg.cs.tsinghua.edu.cn/people/~kun/interreflection/"
-                                style="color:rgb(0, 51, 102)" target="_blank">Project Page</a>, <a
-                                href="https://drive.google.com/file/d/1BmrDsOKTYPGUtx4CLUjtaQ8kI_sPbpmS/view?usp=drive_link" style="color:rgb(0, 51, 102)"
-                                target="_blank">PDF(Preprint)</a>, <a href="https://drive.google.com/file/d/1jeDcK4tjLJbZFuQJjBgMgZfZAVMCOhKy/view?usp=drive_link"
-                                style="color:rgb(0, 51, 102)" target="_blank">Video</a>, Slides, <a
-                                href="https://drive.google.com/file/d/1MzbDWG0qwTFVne8ksMKoxwN7MJxeQ-cH/view?usp=drive_link" style="color:rgb(0, 51, 102)"
-                                target="_blank">BibTex</a>).
-                            </p>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td><img alt="SIGASIA 2013" border="0" height="81" src="Images/ASG_SigAsia13.png"
-                              style="float:left;margin-top:1em;margin-right:1em;margin-bottom:0.3em;margin-left:1em"
-                              width="179" /></td>
-                          <td>
-                            <p
-                              style="line-height:1.5;padding-top:0.25em;padding-right:1em;padding-bottom:0.25em;padding-left:1em">
-                              <a href="http://cg.cs.tsinghua.edu.cn/people/~kun/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Kun Xu</a>, <a href="http://sunweilun.github.io/"
-                                style="color:rgb(0, 51, 102)" target="_blank">Weilun Sun</a>, <b>Zhao Dong</b>, Dan-Yong
-                              Zhao, Run-Dong Wu, <a href="http://cg.cs.tsinghua.edu.cn/prof_hu.htm"
-                                style="color:rgb(0, 51, 102)" target="_blank">Shi-Min Hu</a>. "<i>Anisotropic Spherical
-                                Gaussians</i>", <a href="http://tog.acm.org/" style="color:rgb(0, 51, 102)"
-                                target="_blank">ACM Transactions on Graphics (TOG)</a>, 32(6), 209:1 - 209:11, 2013.
-                              (Proceedings of <a href="http://sa2013.siggraph.org/en/" style="color:rgb(0, 51, 102)"
-                                target="_blank">SIGGRAPH Asia 2013</a>). (<a href="https://drive.google.com/file/d/1qFqJBZOEHSEsNseA1gv4tRBdIMNLa82A/view?usp=drive_link"
-                                style="color:rgb(0, 51, 102)" target="_blank">PDF(Preprint)</a>, <a
-                                href="https://drive.google.com/file/d/1tOGU4MGnw_pnPPdB85fMApuIDjMOoP9a/view?usp=drive_link" style="color:rgb(0, 51, 102)"
-                                target="_blank">Supplemental PDF</a>, <a href="https://drive.google.com/file/d/1oY6n_gah2yLIGx4ljRqcHOP_Opcu3Nni/view?usp=drive_link"
-                                style="color:rgb(0, 51, 102)" target="_blank">Video</a>, <a href="https://drive.google.com/file/d/1AK54opwq5oFCCRsdyhR32cuvyP4N-JQo/view?usp=drive_link"
-                                style="color:rgb(0, 51, 102)" target="_blank">Slides</a>, <a
-                                href="https://drive.google.com/file/d/1BhUVhy1lgYl2mEq_ws-2I6tMyEZZJ5Ax/view?usp=drive_link" style="color:rgb(0, 51, 102)"
-                                target="_blank">BibTex</a>).
-                            </p>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td><img alt="TVCG 2013" border="0" height="81" src="Images/TVCG2013_Reps.png"
-                              style="float:left;margin-top:1em;margin-right:1em;margin-bottom:0.3em;margin-left:1em"
-                              width="179" /></td>
-                          <td>
-                            <p
-                              style="line-height:1.5;padding-top:0.25em;padding-right:1em;padding-bottom:0.25em;padding-left:1em">
-                              <a href="http://vis.cs.ucdavis.edu/~zhang/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Yubo Zhang</a>, <b>Zhao Dong</b>, <a
-                                href="http://www.cs.ucdavis.edu/~ma/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Kwan-Liu Ma</a>. "<i>Real-time Volume Rendering in Dynamic Lighting
-                                Environments using Precomputed Photon Mapping</i> ", <a
-                                href="http://www.computer.org/portal/web/tvcg" style="color:rgb(0, 51, 102)"
-                                target="_blank">IEEE Transactions on Visualization and Computer Graphics (TVCG)</a>,
-                              volume 19, issue 8, August 2013, (<a href="https://drive.google.com/file/d/1DpLD0PIDZENp_jruVSCRuCsT-xVnNm_F/view?usp=drive_link"
-                                style="color:rgb(0, 51, 102)" target="_blank">PDF(Preprint)</a>, <a
-                                href="https://drive.google.com/file/d/17RfukHoMzjskFThIyyZ7GrIjkc7vJgS7/view?usp=drive_link" style="color:rgb(0, 51, 102)" target="_blank">Video(H.264
-                                codec)</a>, <a href="https://drive.google.com/file/d/1KBF4dG_qYeJwS80jvG6jh6S8a3018ztb/view?usp=drive_link"
-                                style="color:rgb(0, 51, 102)" target="_blank">BibTex</a>).
-                            </p>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td><img alt="TVCG 2011" border="0" height="88" src="Images/TVCG2011_Reps.png"
-                              style="float:left;margin-top:1em;margin-right:1em;margin-bottom:0.3em;margin-left:1em"
-                              width="179" /></td>
-                          <td>
-                            <p
-                              style="line-height:1.5;padding-top:0.25em;padding-right:1em;padding-bottom:0.25em;padding-left:1em">
-                              <a href="http://chunxiaxiao.net/" style="color:rgb(0, 51, 102)" target="_blank">Chunxia
-                                Xiao</a>, Meng Liu, <a href="http://chunxiaxiao.net/student/yongweinie/"
-                                style="color:rgb(0, 51, 102)" target="_blank">Yongwei Nie</a>, <b>Zhao Dong</b>.
-                              "<i>Fast Exact Nearest Patch Matching for Patch-Based Image Editing and Processing</i> ",
-                              <a href="http://www.computer.org/portal/web/tvcg" style="color:rgb(0, 51, 102)"
-                                target="_blank">IEEE Transactions on Visualization and Computer Graphics (TVCG)</a>,
-                              volume 17, issue 8, August 2011, (<a
-                                href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=5611508&tag=1"
-                                style="color:rgb(0, 51, 102)" target="_blank">PDF</a>, <a
-                                href="https://drive.google.com/file/d/1wgQ9HZhPAuV3clSuZOKxFUJlWj0dwvjk/view?usp=drive_link" style="color:rgb(0, 51, 102)"
-                                target="_blank">BibTex</a>).
-                            </p>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td><img alt="PG 2010" border="0" height="88" src="Images/PG2010_Reps.png"
-                              style="float:left;margin-top:1em;margin-right:1em;margin-bottom:0.3em;margin-left:1em"
-                              width="179" /></td>
-                          <td>
-                            <p
-                              style="line-height:1.5;padding-top:0.25em;padding-right:1em;padding-bottom:0.25em;padding-left:1em">
-                              <a href="http://cn.linkedin.com/pub/baoguang-yang/14/958/655"
-                                style="color:rgb(0, 51, 102)" target="_blank">Baoguang Yang</a>, <b>Zhao
-                                Dong<sup>*</sup></b>, <a href="http://www.cad.zju.edu.cn/home/jqfeng/"
-                                style="color:rgb(0, 51, 102)" target="_blank">Jieqing Feng</a>, <a
-                                href="http://www.mpi-inf.mpg.de/~hpseidel/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Hans-Peter Seidel</a>, <a href="http://www.cs.ucl.ac.uk/staff/J.Kautz/"
-                                style="color:rgb(0, 51, 102)" target="_blank">Jan Kautz</a>. "<i>Variance Soft Shadow
-                                Mapping</i> ", To Appear in <a href="http://www.wiley.com/bw/journal.asp?ref=0167-7055"
-                                style="color:rgb(0, 51, 102)" target="_blank">Computer Graphics Forum</a> (Proceedings
-                              of <a href="http://www.cad.zju.edu.cn/pg2010/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Pacific Graphics 2010</a>. Result image is selected for Back Cover of
-                              the proceedings.). (<sup>*</sup>The first two authors contributed equally.). (<a
-                                href="https://drive.google.com/file/d/1kiTjVepUVhrAMlt2qQdEoy_QpD0UZ395/view?usp=drive_link" style="color:rgb(0, 51, 102)"
-                                target="_blank">PDF(Preprint)</a>, <a href="https://drive.google.com/file/d/1T-7oIbcGXsO5uLxeq_rImS8kmK2Z0HFI/view?usp=drive_link"
-                                style="color:rgb(0, 51, 102)" target="_blank">BibTex</a>, <a
-                                href="https://drive.google.com/file/d/1pUPaMdylhfVPxoE9OaVNrjNSErtZereG/view?usp=drive_link" style="color:rgb(0, 51, 102)"
-                                target="_blank">Video(Xvid Codec)</a>, <a
-                                href="https://drive.google.com/file/d/1h6XY7Zx5LZ-MmJhAC4hRhqyiGscSWoSy/view?usp=drive_link" style="color:rgb(0, 51, 102)"
-                                target="_blank">Slides</a>).
-                            </p>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td><a href="http://www.springer.com/computer/journal/287" style="color:rgb(0, 51, 102)"
-                              target="_blank"><img alt="Informatik Spektrum" height="120"
-                                src="Images/Informatik_I3D2010.png"
-                                style="float:left;margin-top:1em;margin-right:1em;margin-bottom:0.3em;margin-left:1em"
-                                width="90" /></a></td>
-                          <td>
-                            <p
-                              style="line-height:1.5;padding-top:0.25em;padding-right:1em;padding-bottom:0.25em;padding-left:1em">
-                              The image of our I3D'10 paper has been selected as the Cover Image of <a
-                                href="http://www.springer.com/computer/journal/287" style="color:rgb(0, 51, 102)"
-                                target="_blank">Informatik Spektrum</a>, Volume 33, Issue 3, June 2010.</p>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td><img alt="I3D 2010 Poster" border="0" height="88" src="Images/I3D10_Poster.png"
-                              style="float:left;margin-top:1em;margin-right:1em;margin-bottom:0.3em;margin-left:1em"
-                              width="179" /></td>
-                          <td>
-                            <p
-                              style="line-height:1.5;padding-top:0.25em;padding-right:1em;padding-bottom:0.25em;padding-left:1em">
-                              <b>Zhao Dong</b>, <a href="http://cn.linkedin.com/pub/baoguang-yang/14/958/655"
-                                style="color:rgb(0, 51, 102)" target="_blank">Baoguang Yang</a>. "<i>Variance Soft
-                                Shadow Mapping</i> ", To Appear in <a
-                                href="http://graphics.cs.williams.edu/i3d10/posters.htm" style="color:rgb(0, 51, 102)"
-                                target="_blank">ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games (I3D) 2010,
-                                Poster</a> (PDF, Poster,<a href="https://drive.google.com/file/d/1bJtNedcqbjH1fxQqtuFavm4hQrhePrEN/view?usp=drive_link"
-                                style="color:rgb(0, 51, 102)" target="_blank">BibTex</a>, <a
-                                href="https://drive.google.com/file/d/1C8VXgAHiOroIes_VmucAjvp0mjH2AZuz/view?usp=drive_link" style="color:rgb(0, 51, 102)"
-                                target="_blank">Video(Xvid Codec)</a>).
-                            </p>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td><img alt="I3D 2010" border="0" height="88" src="Images/Tech09_RepS.png"
-                              style="float:left;margin-top:1em;margin-right:1em;margin-bottom:0.3em;margin-left:1em"
-                              width="179" /></td>
-                          <td>
-                            <p
-                              style="line-height:1.5;padding-top:0.25em;padding-right:1em;padding-bottom:0.25em;padding-left:1em">
-                              <a href="http://research.cs.buct.edu.cn/huwei/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Wei Hu</a>, <b>Zhao Dong<sup>*</sup></b>, <a
-                                href="http://people.cs.ubc.ca/~ivoihrke/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Ivo Ihrke</a>, <a
-                                href="http://isgwww.cs.uni-magdeburg.de/isg/grosch.html.en"
-                                style="color:rgb(0, 51, 102)" target="_blank">Thosten Grosch</a>, <a
-                                href="http://www.mpi-inf.mpg.de/~hpseidel/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Hans-Peter Seidel</a>. "<i>Interactive Volume Caustics in
-                                Single-Scattering Media</i> ", To Appear in <a
-                                href="http://graphics.cs.williams.edu/i3d10/" style="color:rgb(0, 51, 102)"
-                                target="_blank">ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games (I3D)
-                                2010</a> (Result image is selected for Back Cover of the proceedings.). (<sup>*</sup>The
-                              first two authors contributed equally.). (<a href="https://drive.google.com/file/d/1GYrVzJorcVPTf2MAwZSVz_bH0ud4Tv4m/view?usp=drive_link"
-                                style="color:rgb(0, 51, 102)" target="_blank">PDF(Preprint)</a>, <a
-                                href="https://drive.google.com/file/d/1jEyREBcPGTITWVT_EmrfI-SH_DvX3_NT/view?usp=drive_link" style="color:rgb(0, 51, 102)"
-                                target="_blank">BibTex</a>, <a href="https://drive.google.com/file/d/1lnHUjiE_QQsvL8Ltm67Pi3iafScwKr9a/view?usp=drive_link"
-                                style="color:rgb(0, 51, 102)" target="_blank">Video(Xvid Codec)</a>,<a
-                                href="https://drive.google.com/file/d/1vvHoDpjKMHBhu1rISk-GB1dQs1cg2OJZ/view?usp=drive_link" style="color:rgb(0, 51, 102)"
-                                target="_blank">Slides</a>).
-                            </p>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td><img alt="VMV 2009" border="0" height="88" src="Images/VMV09_RepS.png"
-                              style="float:left;margin-top:1em;margin-right:1em;margin-bottom:0.3em;margin-left:1em"
-                              width="179" /></td>
-                          <td>
-                            <p
-                              style="line-height:1.5;padding-top:0.25em;padding-right:1em;padding-bottom:0.25em;padding-left:1em">
-                              <b>Zhao Dong</b>, <a href="http://isgwww.cs.uni-magdeburg.de/isg/grosch.html.en"
-                                style="color:rgb(0, 51, 102)" target="_blank">Thosten Grosch</a>, <a
-                                href="http://www.mpi-inf.mpg.de/~ritschel/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Tobias Ritschel</a>, <a href="http://www.cs.ucl.ac.uk/staff/J.Kautz/"
-                                style="color:rgb(0, 51, 102)" target="_blank">Jan Kautz</a>, <a
-                                href="http://www.mpi-inf.mpg.de/~hpseidel/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Hans-Peter Seidel</a>. "<i>Real-time Indirect Illumination with
-                                Clustered Visibility</i> ", Accepted by <a href="http://vmv09.tu-bs.de/"
-                                style="color:rgb(0, 51, 102)" target="_blank">Vision, Modeling, and Visualization
-                                Workshop (VMV) 2009</a>, (<a href="https://drive.google.com/file/d/1kQJjmlXfgckLMy6J344Y4HuzRFjoTZgU/view?usp=drive_link"
-                                style="color:rgb(0, 51, 102)" target="_blank">PDF</a>, <a
-                                href="https://drive.google.com/file/d/170W91SIKP7p54iKwnrHJutmK8Gu3uSwB/view?usp=drive_link" style="color:rgb(0, 51, 102)"
-                                target="_blank">BibTex</a>, <a href="https://drive.google.com/file/d/1vsu7aZfPL2LuT_0SSTYeTViqAsksDDpv/view?usp=drive_link"
-                                style="color:rgb(0, 51, 102)" target="_blank">Video(Divx Codec)</a>,<a
-                                href="https://drive.google.com/file/d/1QYY8V-CqDhdNa0eiQIt-YNQD0sLeqmFv/view?usp=drive_link" style="color:rgb(0, 51, 102)" target="_blank">Slides</a>).
-                            </p>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td><img alt="SIGGRAPH 2008" border="0" height="79" src="Images/FirstSIG_Zhao.png"
-                              style="float:left;margin-top:1em;margin-right:1em;margin-bottom:0.3em;margin-left:1em"
-                              width="179" /></td>
-                          <td>
-                            <p
-                              style="line-height:1.5;padding-top:0.25em;padding-right:1em;padding-bottom:0.25em;padding-left:1em">
-                              <a href="http://www.mpi-inf.mpg.de/~tannen/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Thomas Annen</a>, <b>Zhao Dong<sup>*</sup></b>, <a
-                                href="http://research.edm.uhasselt.be/~tmertens/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Tom mertens</a>, <a
-                                href="http://www.edm.uhasselt.be/people/show/philippe.bekaert"
-                                style="color:rgb(0, 51, 102)" target="_blank">Philippe Bekaert</a>, <a
-                                href="http://www.mpi-inf.mpg.de/~hpseidel/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Hans-Peter Seidel</a>, <a href="http://www.cs.ucl.ac.uk/staff/J.Kautz/"
-                                style="color:rgb(0, 51, 102)" target="_blank">Jan Kautz</a>. "<i>Real-Time,
-                                All-Frequency Shadows in Dynamic Scenes</i> ", <a href="http://tog.acm.org/"
-                                style="color:rgb(0, 51, 102)" target="_blank">ACM Transactions on Graphics (TOG)</a>,
-                              (<a href="http://www.siggraph.org/s2008/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Proceedings of SIGGRAPH 2008</a>) (<sup>*</sup>The first two authors are
-                              sorted by the alphabetic order of their last names). (<a href="https://drive.google.com/file/d/1mQf4nvAoE1YSdYanTmURSAJ5NqXvocIw/view?usp=drive_link"
-                                style="color:rgb(0, 51, 102)" target="_blank">PDF</a>, <a
-                                href="https://drive.google.com/file/d/1RcHqg4GZyMNtkGFi1JPbpyWlHQr_lgrb/view?usp=drive_link" style="color:rgb(0, 51, 102)"
-                                target="_blank">BibTex</a>, <a href="https://drive.google.com/file/d/1C9JlhTyiVBHPIpt3lTN_EJz9O1uUg5pf/view?usp=drive_link"
-                                style="color:rgb(0, 51, 102)" target="_blank">Video(Divx Codec)</a>, <a
-                                href="https://drive.google.com/file/d/1wm_3Smdu8n5sksP1y_9m4AlDIeBHWrR6/view?usp=drive_link" style="color:rgb(0, 51, 102)"
-                                target="_blank">Slides</a>).
-                            </p>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td><img alt="the Visual Computer" border="0" height="79" src="Images/caustics.JPG"
-                              style="float:left;margin-top:1em;margin-right:1em;margin-bottom:0.3em;margin-left:1em"
-                              width="179" /></td>
-                          <td>
-                            <p
-                              style="line-height:1.5;padding-top:0.25em;padding-right:1em;padding-bottom:0.25em;padding-left:1em">
-                              <a href="http://www.cad.zju.edu.cn/home/xgliu/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Xinguo Liu</a>, <b>Zhao Dong</b>, <a
-                                href="http://www.cad.zju.edu.cn/home/peng/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Qunsheng Peng</a>, <a href="http://www.cad.zju.edu.cn/home/bao/"
-                                style="color:rgb(0, 51, 102)" target="_blank">Hujun Bao</a>. "<i>Caustics Spot Light for
-                                Rendering Caustics</i> ", to Appear in <a
-                                href="http://www.springer.com/computer/computer+imaging/journal/371"
-                                style="color:rgb(0, 51, 102)">the Visual Computer</a> ( Best ranked paper accepted by <a
-                                href="http://www.cgi-conf.org/accepted_papers.html" style="color:rgb(0, 51, 102)"
-                                target="_blank">Computer Graphics International 2008</a> ). (<a
-                                href="http://dx.doi.org/10.1007/s00371-008-0229-9" style="color:rgb(0, 51, 102)"
-                                target="_blank">PDF</a>, <a href="https://drive.google.com/file/d/1Q3tO0Sf6ZV-kworxGrh0G4TOPfejInY1/view?usp=drive_link"
-                                style="color:rgb(0, 51, 102)" target="_blank">BibTex</a>).
-                            </p>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td><a href="http://www.springer.com/dal/home/computerbuch?SGWID=1-40355-70-1044297-0"
-                              style="color:rgb(0, 51, 102)" target="_blank"><img alt="Informatik Spektrum" height="120"
-                                src="Images/cda_displayimage.jpg"
-                                style="float:left;margin-top:1em;margin-right:1em;margin-bottom:0.3em;margin-left:1em"
-                                width="90" /></a></td>
-                          <td>
-                            <p
-                              style="line-height:1.5;padding-top:0.25em;padding-right:1em;padding-bottom:0.25em;padding-left:1em">
-                              The image of our PG07 paper has been selected as the Cover Image of <a
-                                href="http://www.springer.com/dal/home/computerbuch?SGWID=1-40355-70-1044297-0"
-                                style="color:rgb(0, 51, 102)" target="_blank">Informatik Spektrum</a>, Volume 30, Issue
-                              6, December 2007.</p>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td><img alt="PG07" border="0" height="79" src="Images/PG07_small.png"
-                              style="float:left;margin-top:1em;margin-right:1em;margin-bottom:0.3em;margin-left:1em"
-                              width="179" /></td>
-                          <td>
-                            <p
-                              style="line-height:1.5;padding-top:0.25em;padding-right:1em;padding-bottom:0.25em;padding-left:1em">
-                              <b>Zhao Dong</b>, <a href="http://www.cs.ucl.ac.uk/staff/J.Kautz/"
-                                style="color:rgb(0, 51, 102)" target="_blank">Jan Kautz</a>, <a
-                                href="http://www.mpi-inf.mpg.de/~theobalt/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Chrisitan Theobalt</a>, <a href="http://www.mpi-inf.mpg.de/~hpseidel/"
-                                style="color:rgb(0, 51, 102)" target="_blank">Hans-Peter Seidel</a>. "<i>Interactive
-                                Global Illumination Using Implicit Visibility</i> ", Accepted by <a
-                                href="http://mm.cse.wustl.edu/pg07/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Pacific Graphics 2007</a> (oral paper), (<a
-                                href="https://drive.google.com/file/d/1qmedwJ-o31vibjlfqB_raRciQP1CQcHO/view?usp=drive_link" style="color:rgb(0, 51, 102)"
-                                target="_blank">PDF</a>, <a href="https://drive.google.com/file/d/1kzpWkFnohahtcg0lcRUDwToblz2mu32c/view?usp=drive_link"
-                                style="color:rgb(0, 51, 102)" target="_blank">BibTex</a>,<a href="https://drive.google.com/file/d/1Q3RonriwTJMW6mFEl2Xru0ggW92y-HX5/view?usp=drive_link"
-                                style="color:rgb(0, 51, 102)">Video(Divx Codec)</a>, <a
-                                href="https://docs.google.com/presentation/d/1HuZMHqk-nb7CP8Ucv2t9CGM8NFqHuw81/edit?usp=drive_link&ouid=107302474887608454923&rtpof=true&sd=true" style="color:rgb(0, 51, 102)"
-                                target="_blank">Presentation(PPS file)</a>).
-                            </p>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td><img alt="IEEEMM" border="0" height="110" src="Images/IEEEMM_small.png"
-                              style="float:left;margin-top:1em;margin-right:1em;margin-bottom:0.3em;margin-left:1em"
-                              width="180" /></td>
-                          <td>
-                            <p
-                              style="line-height:1.5;padding-top:0.25em;padding-right:1em;padding-bottom:0.25em;padding-left:1em">
-                              Mingli Song, <b>Zhao Dong</b>, <a href="http://www.mpi-inf.mpg.de/~theobalt/"
-                                style="color:rgb(0, 51, 102)" target="_blank">Chrisitan Theobalt</a>, Huiqiong Wang, <a
-                                href="http://research.microsoft.com/en-us/um/people/zliu/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Zicheng Liu</a>, <a href="http://www.mpi-inf.mpg.de/~hpseidel/"
-                                style="color:rgb(0, 51, 102)" target="_blank">Hans-Peter Seidel</a>. "<i>A General
-                                Framework for Efficient 2D and 3D Facial Expression Analogy</i>", <a
-                                href="http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?isnumber=4351892&amp;arnumber=4351915&amp;count=25&amp;index=6"
-                                style="color:rgb(0, 51, 102)" target="_blank">IEEE Transactions on Multimedia, Volume:
-                                9, Issue: 7</a>. (<a href="https://drive.google.com/file/d/1GJTkeQ6YZesv48fBqbrh5EOMeUovliW0/view?usp=drive_link"
-                                style="color:rgb(0, 51, 102)">Video</a>,<a href="https://drive.google.com/file/d/1cCRPyWvA7K5l4igVn4GeDCMirKiFvt17/view?usp=drive_link"
-                                style="color:rgb(0, 51, 102)" target="_blank">BibTex</a>).</p>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td><img alt="PG04" border="0" height="113" src="Images/PG04_small.jpg"
-                              style="float:left;margin-top:1em;margin-right:1em;margin-bottom:0.3em;margin-left:1em"
-                              width="180" /></td>
-                          <td>
-                            <p
-                              style="line-height:1.5;padding-top:0.25em;padding-right:1em;padding-bottom:0.25em;padding-left:1em">
-                              <b>Zhao Dong</b>, <a href="http://www.cad.zju.edu.cn/home/chenwei/"
-                                style="color:rgb(0, 51, 102)" target="_blank">Wei Chen</a>, <a
-                                href="http://www.cad.zju.edu.cn/home/bao/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Hujun Bao</a>, <a href="http://www.cad.zju.edu.cn/home/zhx/"
-                                style="color:rgb(0, 51, 102)" target="_blank">Hongxin Zhang</a>, <a
-                                href="http://www.cad.zju.edu.cn/home/peng/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Qunsheng Peng</a>. "<i>Real-time Voxelization for Complex Polygonal
-                                Models</i> ", In Proceedings of the 12th Pacific Conference on Computer Graphics and
-                              Applications (Pacific Graphics 2004)(<a href="https://drive.google.com/file/d/10N4bZ0RXWsXGXYiDOwU9awjlx1_IJZTz/view?usp=drive_link"
-                                style="color:rgb(0, 51, 102)" target="_blank">PDF</a>,<a href="https://docs.google.com/presentation/d/1KdtOrti08R5UEdg3f47YLl07Tcs8Xufe/edit?usp=drive_link&ouid=107302474887608454923&rtpof=true&sd=true"
-                                style="color:rgb(0, 51, 102)" target="_blank">PPT</a>,<a
-                                href="https://drive.google.com/file/d/1sAcV_hbUkRtg89d7zvSwdx2jdoAJhFjv/view?usp=drive_link" style="color:rgb(0, 51, 102)"
-                                target="_blank">BibTex</a>).
-                            </p>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td><img alt="High-quality Point-based rendering" border="0" height="115"
-                              src="Images/PointRendering_small.png"
-                              style="float:left;margin-top:1em;margin-right:1em;margin-bottom:0.3em;margin-left:1em"
-                              width="180" /></td>
-                          <td>
-                            <p
-                              style="line-height:1.5;padding-top:0.25em;padding-right:1em;padding-bottom:0.25em;padding-left:1em">
-                              <b>Zhao Dong</b>, <a href="http://www.cad.zju.edu.cn/home/chenwei/"
-                                style="color:rgb(0, 51, 102)" target="_blank">Wei Chen</a>, Long Zhang and <a
-                                href="http://www.cad.zju.edu.cn/home/peng/" style="color:rgb(0, 51, 102)"
-                                target="_blank">Qunsheng Peng</a>. " <i>Balancing CPU and GPU: Real-time Visualization
-                                of Large Scale 3D Scene </i>". In The Third International Conference on Grid and
-                              Cooperative Computing (GCC 2004), VVS workshop (Visualization and Visual Steering), Wuhan,
-                              October. 2004. Lecture Notes in Computer Science, Springer Verlag.
-                            </p>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </span></span></div>
-            </div>
-          </span></b></span></i></div>
-  </div>
-  </td>
-  </tr>
-  </tbody>
-  </table>
-  </div>
-  </div>
-  </div>
-  </td>
-  </tr>
-  </table>
-  <div><!-- Start of StatCounter Code -->
+    <!-- Start of StatCounter Code -->
     <script type="text/javascript">
-      var sc_project = 6757902;
+      var sc_project = 4159814;
       var sc_invisible = 1;
-      var sc_security = "d16d6808"; 
+      var sc_security = "9a41ba6b";
     </script>
-    <script type="text/javascript" src="http://www.statcounter.com/counter/counter.js"></script><noscript>
-      <div class="statcounter"><a title="tumblr tracker" href="http://statcounter.com/tumblr/" target="_blank"><img
-            class="statcounter" src="http://c.statcounter.com/6757902/0/d16d6808/1/" alt="tumblr tracker"></a></div>
+    <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+    <noscript>
+      <div class="statcounter">
+        <a title="Web Analytics Made Easy - StatCounter" href="https://statcounter.com/" target="_blank">
+          <img class="statcounter" src="https://c.statcounter.com/4159814/0/9a41ba6b/1/" alt="Web Analytics Made Easy - StatCounter">
+        </a>
+      </div>
     </noscript>
     <!-- End of StatCounter Code -->
   </div>
 </body>
-
 </html>

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Zhao Dong's (董朝) Homepage.</title>
+  <meta name="author" content="Zhao Dong">
+  <meta name="description" content="Zhao Dong's personal webpage.">
+  <meta name="keywords" content="Zhao Dong, Physically-based Rendering, SVBRDF Acquisition, BRDF Modelling, Complex Lighting, Scattering, Global Illumination.">
+  <link rel="icon" href="Images/ZhaoDong_2008.ico">
+  <link rel="shortcut icon" href="Images/ZhaoDong_2008.ico">
+  <link rel="apple-touch-icon" href="Images/ZhaoDong_2008.ico">
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Google Analytics -->
+  <script>
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-4345202-2']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+      var ga = document.createElement('script'); 
+      ga.type = 'text/javascript'; 
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; 
+      s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-title">
+      <h2>
+        <a href="http://www.flycooler.com">Welcome to Zhao Dong's (董朝) homepage</a>
+      </h2>
+    </div>
+  </header>
+
+  <!-- Profile Section -->
+  <section class="profile-section">
+    <div class="profile-photo">
+      <img src="Images/Zhao_Photo_crop1_2020.jpg" alt="Zhao Dong" width="268">
+    </div>
+    <div class="contact-info">
+      <div>
+        <img src="Images/zdongContact_updated.png" alt="Contact Information" height="160">
+      </div>
+      <div class="logos">
+        <img src="Images/Cornell_Logo.jpg" alt="Cornell University" height="120">
+        <img src="Images/MPII_Logo.jpg" alt="Max Planck Institute" height="120">
+        <img src="Images/ZJU_Logo.jpg" alt="Zhejiang University" height="120">
+      </div>
+    </div>
+  </section>
+
+  <!-- Bio Section -->
+  <section class="bio-section">
+    <div class="divider">
+      <hr>
+    </div>
+    
+    <div class="bio-paragraph">
+      I am currently a Senior Research Lead & Manager at <a href="https://research.fb.com/category/augmented-reality-virtual-reality/" target="_blank">Meta Reality Labs Research</a> building the next-gen human-centric agent computing platform. Previously, I served as the Graphics Research Lead at the Technology Development Group of <a href="https://www.apple.com" target="_blank">Apple</a>, a Principal R&D Engineer with <a href="https://www.autodesk.com/products/rendering/overview" target="_blank">Autodesk's Cloud Rendering Service team</a>, and a Postdoctoral Researcher at the <a href="http://www.graphics.cornell.edu/" target="_blank">Program of Computer Graphics</a> of <a href="http://www.cornell.edu/" target="_blank">Cornell University</a>.
+    </div>
+    
+    <div class="bio-paragraph">
+      In 1997, I was enrolled in <a href="http://www.zju.edu.cn/" target="_blank">Zhejiang University</a>. After earning my bachelor's degrees, I started my research journey by pursuing my M.S. degree at the <a href="http://www.cad.zju.edu.cn" target="_blank">State Key Lab of CAD&CG of Zhejiang University</a>. During this time, I had the privilege of working under the guidance of <a href="http://www.cad.zju.edu.cn/home/peng/" target="_blank">Prof. Qunsheng Peng</a> and <a href="http://www.cad.zju.edu.cn/home/chenwei/" target="_blank">Prof. Wei Chen</a>, exploring fascinating problems in graphics research. In September 2005, I embarked on my Ph.D. journey at the <a href="http://www.mpi-inf.mpg.de/departments/d4/index.html" target="_blank">Computer Graphics Group</a> of the <a href="http://www.mpi-inf.mpg.de/" target="_blank">Max-Planck-Institut für Informatik</a> in Saarbrücken, Germany, under the supervision of <a href="http://www.mpi-inf.mpg.de/~hpseidel/" target="_blank">Prof. Dr. Hans-Peter Seidel</a>. My Ph.D. research focused on GPU-based real-time rendering, where I had the opportunity to collaborate closely with <a href="https://jankautz.com/" target="_blank">Prof. Jan Kautz</a>. Throughout my academic journey, I also visited the <a href="http://research.microsoft.com/en-us/groups/ig/" target="_blank">Internet Graphics Group</a> at <a href="http://research.microsoft.com/en-us/labs/asia/default.aspx" target="_blank">MSRA</a>, working with <a href="http://www.cad.zju.edu.cn/home/xgliu/" target="_blank">Prof. Xinguo Liu</a> and <a href="http://research.microsoft.com/en-us/groups/graphics/" target="_blank">Computer Graphics Group</a> at <a href="http://research.microsoft.com/en-us/labs/redmond/default.aspx" target="_blank">MSR</a>, under the mentorship of <a href="http://research.microsoft.com/en-us/um/people/johnsny/" target="_blank">Dr. John Snyder</a>. These experiences, alongside the invaluable mentorship of my advisors, have profoundly shaped my research and career. I am deeply grateful for the knowledge and inspiration I have gained from them.
+    </div>
+  </section>
+
+  <div class="spacer"></div>
+
+  <!-- Navigation -->
+  <nav class="navigation">
+    <table class="nav-table">
+      <tr>
+        <td class="nav-cell"><a href="#research">Research Interests</a></td>
+        <td class="nav-cell"><a href="#academic">Academic Activities</a></td>
+        <td class="nav-cell"><a href="#education">Education</a></td>
+        <td class="nav-cell"><a href="#professional">Professional Experiences</a></td>
+        <td class="nav-cell"><a href="#publication">Publications</a></td>
+      </tr>
+    </table>
+  </nav>
+
+  <!-- Content Sections -->
+  <main class="content-section">
+    <!-- Research Interests -->
+    <section id="research">
+      <div class="section-title">Research Interests</div>
+      <ul class="research-list">
+        <li>3D Object/Scene Reconstruction</li>
+        <li>Inverse/Differentiable Rendering</li>
+        <li>Generative AI for 3D (Gen3D)</li>
+        <li>Neural/Real-time/Offline Rendering</li>
+        <li>Photorealistic Materials & Lighting</li>
+      </ul>
+    </section>
+
+    <br>
+
+    <!-- Academic Activities -->
+    <section id="academic">
+      <div class="section-title">Academic Activities</div>
+      <ul class="activities-list">
+        <li>Paper Committee Member for:
+          <ul class="nested-list">
+            <li>ACM SIGGRAPH 2025</li>
+            <li>ACM I3D 2012-2016</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <br>
+
+    <!-- Education -->
+    <section id="education">
+      <div class="section-title">Education</div>
+      <ul class="education-list">
+        <li><strong>September 2005 - February 2011:</strong><br>
+          Ph.D. in the <a href="http://www.mpi-inf.mpg.de/departments/d4/" target="_blank">Computer Graphics Department</a> of <a href="http://www.mpi-inf.mpg.de/" target="_blank">Max-Planck-Institut für Informatik</a> and the <a href="http://www.cs.uni-saarland.de/" target="_blank">Universität des Saarlandes</a>, Saarbrücken, Germany.<br>
+          Ph.D. Thesis: <a href="http://scidok.sulb.uni-saarland.de/volltexte/2011/3680/pdf/Dissertation_175_Dong_Zhao_2011.pdf" target="_blank">Visually Pleasing Real-time Global Illumination Rendering for Fully-dynamic Scenes.</a> (Supervisor: <a href="http://www.mpi-inf.mpg.de/~hpseidel/" target="_blank">Prof. Dr. Hans-Peter Seidel</a>).
+        </li>
+        <li><strong>September 2002 - April 2005:</strong><br>
+          M.Sc. in Computer Science at Zhejiang University<br>
+          Master Thesis: Relevant Technology Study on Programmable Graphics Hardware(In Chinese).<br>
+          (Supervisors: <a href="http://www.cad.zju.edu.cn/home/peng" target="_blank">Prof. Qunsheng Peng</a> and <a href="http://www.cad.zju.edu.cn/home/chenwei" target="_blank">Associate Prof. Wei Chen</a>) (<a href="https://drive.google.com/file/d/1qnRsnraYVkwah2HWE4F_OhLp-JGiX_5N/view?usp=sharing" target="_blank">PDF</a>)
+        </li>
+        <li><strong>September 1997 - June 2001</strong><br>
+          Bachelor in Polymer Engineering and Secondary Bachelor in Computer Science, <a href="http://www.zju.edu.cn/" target="_blank">Zhejiang University</a>
+        </li>
+      </ul>
+    </section>
+
+    <br>
+
+    <!-- Professional Experiences -->
+    <section id="professional">
+      <div class="section-title">Professional Experiences</div>
+      <ul class="professional-list">
+        <li><a href="https://www.linkedin.com/in/flycooler/" target="_blank">LinkedIn</a></li>
+        <li><a href="https://scholar.google.com/citations?user=51ZIHGIAAAAJ&hl=en" target="_blank">Google Scholar</a></li>
+      </ul>
+    </section>
+
+    <br>
+
+    <!-- Publications -->
+    <section id="publication">
+      <div class="section-title">Publications</div>
+      
+      <div class="publication-item">
+        <img src="Images/MonoGS_SIG2025.jpg" alt="SIGGRAPH 2025 MonoGS" height="90" width="179">
+        <div class="publication-details">
+          <p>
+            <a href="https://poiw.github.io/" target="_blank">Songyin Wu</a>, 
+            <a href="https://lvzhaoyang.github.io/" target="_blank">Zhaoyang Lv</a>, 
+            <a href="https://mike323zyf.github.io/" target="_blank">Yufeng Zhu</a>, 
+            <a href="https://scholar.google.com/citations?user=P9l4zHIAAAAJ&hl=fr" target="_blank">Duncan Frost</a>, 
+            <a href="https://sites.google.com/a/eng.ucsd.edu/zhengqinli" target="_blank">Zhengqin Li</a>, 
+            <a href="https://sites.cs.ucsb.edu/~lingqi/" target="_blank">Lingqi Yan</a>, 
+            <a href="https://www.carlyuheng.com/" target="_blank">Carl Ren</a>, 
+            <a href="https://scholar.google.co.uk/citations?user=MhowvPkAAAAJ&hl=en" target="_blank">Richard Newcombe</a>, 
+            <strong>Zhao Dong</strong>.
+            "<em>Monocular Online Reconstruction with Enhanced Detail Preservation</em>", 
+            <a href="https://s2025.siggraph.org/" target="_blank">SIGGRAPH 2025 (Conference Track)</a>. 
+            (<a href="https://poiw.github.io/MODP/index.html" target="_blank">Project Page</a>, 
+            <a href="https://arxiv.org/abs/2505.07887" target="_blank">Paper (arXiv)</a>).
+          </p>
+        </div>
+      </div>
+      
+      <div class="publication-item">
+        <img src="Images/PhotoRealGS_SIG2025.jpg" alt="SIGGRAPH 2025 PhotorealGS" height="90" width="179">
+        <div class="publication-details">
+          <p>
+            <a href="https://lvzhaoyang.github.io/" target="_blank">Zhaoyang Lv</a>, 
+            <a href="https://scholar.google.com/citations?user=gpgb4LgAAAAJ&hl=en" target="_blank">Maurizio Monge</a>, 
+            <a href="https://www.linkedin.com/in/ka-chen-ab116a31/" target="_blank">Ka Chen</a>, 
+            <a href="https://mike323zyf.github.io/" target="_blank">Yufeng Zhu</a>, 
+            <a href="https://scholar.google.com/citations?user=56UhAooAAAAJ&hl=en" target="_blank">Michael Goesele</a>, 
+            <a href="https://jakobengel.github.io/" target="_blank">Jakob Engel</a>, 
+            <strong>Zhao Dong</strong>, 
+            <a href="https://scholar.google.co.uk/citations?user=MhowvPkAAAAJ&hl=en" target="_blank">Richard Newcombe</a>.
+            "<em>Photoreal Scene Reconstruction from an Egocentric Device</em>", 
+            <a href="https://s2025.siggraph.org/" target="_blank">SIGGRAPH 2025 (Conference Track)</a>.
+          </p>
+        </div>
+      </div>
+
+      <div class="publication-item">
+        <img src="Images/Texturedreamer_CVPR24.jpg" alt="CVPR 2024 Texture Dreamer" height="90" width="179">
+        <div class="publication-details">
+          <p>
+            <a href="https://yuyingyeh.github.io/" target="_blank">Yu-ying Yeh</a>,
+            <a href="https://jbhuang0604.github.io" target="_blank">Jia-Bin Huang</a>,
+            <a href="https://changilkim.com" target="_blank">Changil Kim</a>,
+            <a href="https://leixiao-ubc.github.io" target="_blank">Lei Xiao</a>,
+            <a href="https://www.monkeyoverflow.com/about" target="_blank">Thu Nguyen-Phuoc</a>,
+            <a href="https://nkhan2.github.io" target="_blank">Numair Khan</a>,
+            <a href="https://holmes969.github.io" target="_blank">Cheng Zhang</a>,
+            <a href="https://cseweb.ucsd.edu/~mkchandraker/" target="_blank">Manmohan Chandraker</a>,
+            <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=xWD7ZRkAAAAJ&sortby=pubdate" target="_blank">Carl Marshall</a>,
+            <strong>Zhao Dong</strong>,
+            <a href="https://sites.google.com/a/eng.ucsd.edu/zhengqinli" target="_blank">Zhengqin Li</a>.
+            "<em>TextureDreamer: Image-guided Texture Synthesis through Geometry-aware Diffusion</em>", 
+            Proceedings of <a href="https://cvpr.thecvf.com/Conferences/2024" target="_blank">CVPR 2024</a>. 
+            (<a href="https://texturedreamer.github.io/" target="_blank">Project Page</a>, 
+            <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Yeh_TextureDreamer_Image-Guided_Texture_Synthesis_Through_Geometry-Aware_Diffusion_CVPR_2024_paper.pdf" target="_blank">Paper</a>).
+          </p>
+        </div>
+      </div>
+
+      <div class="publication-item">
+        <img src="Images/NeRF_Analogy.png" alt="CVPR 2024 NeRF Analogy" height="80" width="179">
+        <div class="publication-details">
+          <p>
+            <a href="https://mfischer-ucl.github.io/" target="_blank">Michael Fischer</a>,
+            <a href="https://sites.google.com/a/eng.ucsd.edu/zhengqinli" target="_blank">Zhengqin Li</a>,
+            <a href="https://www.monkeyoverflow.com/about" target="_blank">Thu Nguyen-Phuoc</a>,
+            <a href="https://aljazbozic.github.io/" target="_blank">Aljaž Božič</a>,
+            <strong>Zhao Dong</strong>,
+            <a href="https://www.homepages.ucl.ac.uk/~ucactri/" target="_blank">Tobias Ritschel</a>,
+            <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=xWD7ZRkAAAAJ&sortby=pubdate" target="_blank">Carl Marshall</a>.
+            "<em>NeRF Analogies: Example-Based Visual Attribute Transfer for NeRFs</em>", 
+            Proceedings of <a href="https://cvpr.thecvf.com/Conferences/2024" target="_blank">CVPR 2024</a>. 
+            (<a href="https://mfischer-ucl.github.io/nerf_analogies/" target="_blank">Project Page</a>, 
+            <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Fischer_NeRF_Analogies_Example-Based_Visual_Attribute_Transfer_for_NeRFs_CVPR_2024_paper.pdf" target="_blank">Paper</a>).
+          </p>
+        </div>
+      </div>
+
+      <div class="publication-item">
+        <img src="Images/brdf_estimation.jpg" alt="EGSR 2024 Uncertainty" height="85" width="179">
+        <div class="publication-details">
+          <p>
+            <a href="https://scholar.google.com/citations?user=0lGfaCIAAAAJ&hl=en" target="_blank">Zhiqian Zhou</a>,
+            <a href="https://holmes969.github.io" target="_blank">Cheng Zhang</a>,
+            <strong>Zhao Dong</strong>,
+            <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=xWD7ZRkAAAAJ&sortby=pubdate" target="_blank">Carl Marshall</a>,
+            <a href="https://shuangz.com/" target="_blank">Shuang Zhao</a>.
+            "<em>Estimating Uncertainty in Appearance Acquisition</em>", 
+            <a href="https://www.egsr2024.uk/" target="_blank">EGSR 2024</a>. 
+            (<a href="https://drive.google.com/file/d/16Nwjs3QrFnwLh8f47CwoEu0YKKIwFGpT/view?usp=sharing" target="_blank">Paper</a>).
+          </p>
+        </div>
+      </div>
+
+      <div class="publication-item">
+        <img src="Images/Diff-Indirection-SIGAsia2023.jpg" alt="SIGAsia2023 Diff. Indirection" height="90" width="179">
+        <div class="publication-details">
+          <p>
+            <a href="https://sayan1an.github.io/menu2.html" target="_blank">Sayantan Datta</a>,
+            <a href="https://www.linkedin.com/in/carl-s-marshall" target="_blank">Carl Marshall</a>,
+            <a href="https://www.cim.mcgill.ca/~derek/" target="_blank">Derek Nowrouzezahrai</a>,
+            <strong>Zhao Dong</strong>,
+            <a href="https://sites.google.com/a/eng.ucsd.edu/zhengqinli" target="_blank">Zhengqin Li</a>.
+            "<em>Efficient Graphics Representation with Differentiable Indirection</em>", 
+            Proceedings of <a href="https://asia.siggraph.org/2023/" target="_blank">SIGGRAPH Asia 2023</a>. 
+            (<a href="https://sayan1an.github.io/din.html" target="_blank">Project Page</a>, 
+            <a href="https://drive.google.com/file/d/1z63OFV0OhcRIZnCX3psNlHrFEL5iCJiT/view?usp=sharing" target="_blank">Paper</a>).
+          </p>
+        </div>
+      </div>
+
+      <div class="publication-item">
+        <img src="Images/TOG-ML-Lighting.jpg" alt="TOG2023 ML Lighting" height="90" width="179">
+        <div class="publication-details">
+          <p>
+            <a href="https://sites.google.com/a/eng.ucsd.edu/zhengqinli" target="_blank">Zhengqin Li</a>,
+            Li Yu,
+            <a href="https://scholar.google.com/citations?user=_owXoG4AAAAJ&hl=en" target="_blank">Mikhail Okunev</a>,
+            <a href="https://cseweb.ucsd.edu/~mkchandraker/" target="_blank">Manmohan Chandraker</a>,
+            <strong>Zhao Dong</strong>.
+            "<em>Spatiotemporally Consistent HDR Indoor Lighting Estimation</em>", 
+            <a href="http://tog.acm.org/" target="_blank">ACM Transactions on Graphics (TOG)</a>, 2023. 
+            (Presented at <a href="https://asia.siggraph.org/2023/" target="_blank">SIGGRAPH Asia 2023</a>). 
+            (<a href="https://drive.google.com/file/d/1uYFwJH0bZVxXPFnh5cYtZpfomVH_Rcco/view?usp=sharing" target="_blank">Paper</a>).
+          </p>
+        </div>
+      </div>
+
+      <div class="publication-item">
+        <img src="Images/Neural-PBIR-ICCV2023.jpg" alt="ICCV2023 Neural-PBIR" height="90" width="179">
+        <div class="publication-details">
+          <p>
+            <a href="https://sunset1995.github.io/" target="_blank">Cheng Sun</a>,
+            <a href="https://guangyancai.me/" target="_blank">Guangyan Cai</a>,
+            <a href="https://sites.google.com/a/eng.ucsd.edu/zhengqinli" target="_blank">Zhengqin Li</a>,
+            <a href="https://yank.ai/" target="_blank">Kai Yan</a>,
+            <a href="https://holmes969.github.io/" target="_blank">Cheng Zhang</a>,
+            <a href="https://www.linkedin.com/in/carl-s-marshall" target="_blank">Carl Marshall</a>,
+            <a href="https://jbhuang0604.github.io/" target="_blank">Jia-Bin Huang</a>,
+            <a href="https://shuangz.com/" target="_blank">Shuang Zhao</a>,
+            <strong>Zhao Dong</strong>.
+            "<em>Neural-PBIR Reconstruction of Shape, Material, and Illumination</em>", 
+            <a href="https://iccv2023.thecvf.com/" target="_blank">ICCV 2023</a>. 
+            (<a href="https://neural-pbir.github.io/" target="_blank">Project Page</a>, 
+            <a href="https://drive.google.com/file/d/1nXopwTCfVXkscHpuMCP0sZ6Ju4O8Djja/view?usp=sharing" target="_blank">Paper</a>).
+          </p>
+        </div>
+      </div>
+
+      <div class="publication-item">
+        <img src="Images/PSAO-hpg2023.jpg" alt="HPG2023 PSAO" height="90" width="179">
+        <div class="publication-details">
+          <p>
+            <a href="https://thomasneff.github.io/" target="_blank">Thomas Neff</a>,
+            <a href="https://scholar.google.com/citations?user=z67HnEwAAAAJ&hl=en" target="_blank">Brian Budge</a>,
+            <strong>Zhao Dong</strong>,
+            <a href="https://www.tugraz.at/institute/icg/research/team-schmalstieg/" target="_blank">Dieter Schmalstieg</a>,
+            <a href="https://www.markussteinberger.net/" target="_blank">Markus Steinberger</a>.
+            "<em>PSAO: Point-Based Split Rendering for Ambient Occlusion</em>", 
+            <a href="https://www.highperformancegraphics.org/2023/index.html" target="_blank">High-Performance Graphics (HPG) 2023</a>. 
+            (<a href="https://diglib.eg.org/handle/10.2312/hpg20231131" target="_blank">Paper & Video</a>, 
+            <a href="https://www.youtube.com/watch?app=desktop&v=uiSrBJ8WzNw" target="_blank">Talk</a>).
+          </p>
+        </div>
+      </div>
+
+      <div class="publication-item">
+        <img src="Images/Wood_SIGAsia2016.jpg" alt="SIGAsia 2016 Wood" height="90" width="179">
+        <div class="publication-details">
+          <p>
+            <a href="http://www.cs.cornell.edu/~ajul/" target="_blank">Albert Julius Liu</a>,
+            <strong>Zhao Dong</strong>,
+            <a href="http://miloshasan.net/" target="_blank">Miloš Hašan</a>,
+            <a href="http://www.cs.cornell.edu/~srm/" target="_blank">Steve Marschner</a>.
+            "<em>Simulating the structure and texture of solid wood</em>", 
+            <a href="http://tog.acm.org/" target="_blank">ACM Transactions on Graphics (TOG)</a>, 35(6), 2016. 
+            (Proceedings of <a href="http://sa2016.siggraph.org/" target="_blank">SIGGRAPH Asia 2016</a>). 
+            (<a href="https://drive.google.com/file/d/1cEO5GSFa9IfGwHNLNckj2jX0424MQDgF/view?usp=drive_link" target="_blank">PDF(Preprint)</a>, 
+            <a href="https://drive.google.com/file/d/1ZujwBrvmgSRrDyJtPmfnNGMB3v52k3a0/view?usp=drive_link" target="_blank">Video</a>, 
+            <a href="https://www.youtube.com/watch?v=fQxl3M4qZK8" target="_blank">Youtube</a>, 
+            <a href="https://drive.google.com/file/d/1MOmcWtltXxO85g0wF1jkh0LyZwLw-c6_/view?usp=drive_link" target="_blank">BibTex</a>).
+          </p>
+        </div>
+      </div>
+
+      <div class="publication-item">
+        <img src="Images/BRDFMetal_Reps.png" alt="TOG 2015 BRDF" height="89" width="179">
+        <div class="publication-details">
+          <p>
+            <strong>Zhao Dong<sup>*</sup></strong>,
+            <a href="http://www.graphics.cornell.edu/~bjw/" target="_blank">Bruce Walter<sup>*</sup></a>,
+            <a href="http://www.cs.cornell.edu/~srm/" target="_blank">Steve Marschner</a>,
+            <a href="http://www.graphics.cornell.edu/people/director.html" target="_blank">Donald P. Greenberg</a>.
+            "<em>Predicting Appearance from Measured Microgeometry of Metal Surfaces</em>", 
+            <a href="http://dl.acm.org/citation.cfm?id=2815618" target="_blank">ACM Transactions on Graphics (TOG)</a>, 35(1), 9:1 - 9:13, 2015. 
+            (<sup>*</sup>Joint first authors.) (To be presented at <a href="http://s2016.siggraph.org/" target="_blank">SIGGRAPH 2016</a>). 
+            (<a href="https://drive.google.com/file/d/15e-WjhXbkH2irDx2yZMwruceN2bJaVvL/view?usp=drive_link" target="_blank">PDF(Preprint)</a>, 
+            <a href="https://drive.google.com/file/d/1BQHNbTHRJd5ynJJJn-0QrbBRVn3EsFP5/view?usp=drive_link" target="_blank">Supplemental(Kirchhoff)</a>, 
+            <a href="https://drive.google.com/file/d/169hWXQAnjvHTaLX7fnQu3KAwmz2DeTNw/view?usp=drive_link" target="_blank">Supplemental(EllipsoidNDF)</a>, 
+            <a href="https://drive.google.com/file/d/1wVktMx7dOVKuUA2LKCzEOY7IE5sKrboA/view?usp=drive_link" target="_blank">Video</a>, 
+            <a href="https://drive.google.com/file/d/17jKRMZlFBTU_LGBrXJdSCSk1OC3A51HX/view?usp=drive_link" target="_blank">BibTex</a>).
+          </p>
+        </div>
+      </div>
+
+      <div class="publication-item">
+        <img src="Images/FirstSIG_Zhao.png" alt="SIGGRAPH 2008" height="79" width="179">
+        <div class="publication-details">
+          <p>
+            <a href="http://www.mpi-inf.mpg.de/~tannen/" target="_blank">Thomas Annen</a>,
+            <strong>Zhao Dong<sup>*</sup></strong>,
+            <a href="http://research.edm.uhasselt.be/~tmertens/" target="_blank">Tom mertens</a>,
+            <a href="http://www.edm.uhasselt.be/people/show/philippe.bekaert" target="_blank">Philippe Bekaert</a>,
+            <a href="http://www.mpi-inf.mpg.de/~hpseidel/" target="_blank">Hans-Peter Seidel</a>,
+            <a href="http://www.cs.ucl.ac.uk/staff/J.Kautz/" target="_blank">Jan Kautz</a>.
+            "<em>Real-Time, All-Frequency Shadows in Dynamic Scenes</em>", 
+            <a href="http://tog.acm.org/" target="_blank">ACM Transactions on Graphics (TOG)</a>, 
+            (<a href="http://www.siggraph.org/s2008/" target="_blank">Proceedings of SIGGRAPH 2008</a>) 
+            (<sup>*</sup>The first two authors are sorted by the alphabetic order of their last names). 
+            (<a href="https://drive.google.com/file/d/1mQf4nvAoE1YSdYanTmURSAJ5NqXvocIw/view?usp=drive_link" target="_blank">PDF</a>, 
+            <a href="https://drive.google.com/file/d/1RcHqg4GZyMNtkGFi1JPbpyWlHQr_lgrb/view?usp=drive_link" target="_blank">BibTex</a>, 
+            <a href="https://drive.google.com/file/d/1C9JlhTyiVBHPIpt3lTN_EJz9O1uUg5pf/view?usp=drive_link" target="_blank">Video(Divx Codec)</a>, 
+            <a href="https://drive.google.com/file/d/1wm_3Smdu8n5sksP1y_9m4AlDIeBHWrR6/view?usp=drive_link" target="_blank">Slides</a>).
+          </p>
+        </div>
+      </div>
+      
+    </section>
+  </main>
+
+  <!-- Analytics -->
+  <div>
+    <!-- Start of StatCounter Code -->
+    <script type="text/javascript">
+      var sc_project = 4159814;
+      var sc_invisible = 1;
+      var sc_security = "9a41ba6b";
+    </script>
+    <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+    <noscript>
+      <div class="statcounter">
+        <a title="Web Analytics Made Easy - StatCounter" href="https://statcounter.com/" target="_blank">
+          <img class="statcounter" src="https://c.statcounter.com/4159814/0/9a41ba6b/1/" alt="Web Analytics Made Easy - StatCounter">
+        </a>
+      </div>
+    </noscript>
+    <!-- End of StatCounter Code -->
+  </div>
+</body>
+</html>
